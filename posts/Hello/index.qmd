@@ -1,0 +1,9 @@
+---
+title: "MBA Fees in India"
+author: "viswadutt"
+date: "2023-03-13"
+categories: [news, analysis, MBA]
+image: "image.jpg"
+---
+
+

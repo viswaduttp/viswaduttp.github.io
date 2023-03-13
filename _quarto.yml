@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "My Notes"
+  description: "This is Viswadutt's Personal Blog."
+  navbar:
+    right:
+      - text: Blog
+        href: blog.qmd 
+      - icon: github
+        href: https://github.com/viswaduttp
+      - icon: twitter
+        href: https://twitter.com/viswadutt
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+
+
