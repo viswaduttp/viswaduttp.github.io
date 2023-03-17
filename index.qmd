@@ -1,6 +1,6 @@
 ---
 title: "Home"
-image: profile.jpg
+image: profile1.jpg
 about:
   template: jolla
   links:
