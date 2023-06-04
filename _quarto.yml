@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "My Notes"
+  title: "Viswadutt"
   description: "This is Viswadutt's Personal Blog."
   navbar:
     right:

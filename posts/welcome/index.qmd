@@ -1,12 +1,13 @@
 ---
-title: "Welcome To My Blog"
-author: "Tristan O'Malley"
+title: "About this website"
+#author: "Tristan O'Malley"
 date: "2023-03-10"
-categories: [news]
+categories: [tech]
 ---
 
-This is the first post in a Quarto blog. Welcome!
+This website is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website
 
-![](thumbnail.jpg)
-
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+1. [Albert Rapp](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html)
+2. [Quarto on Github Pages](https://quarto.org/docs/publishing/github-pages.html)
+3. https://robertmitchellv.com/blog/2022-08-building-with-quarto/building-with-quarto.html 
+4. [Quarto Gallery](https://quarto.org/docs/gallery/#websites)
