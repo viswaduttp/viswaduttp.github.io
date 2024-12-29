@@ -10,7 +10,7 @@
 <atom:link href="https://viswaduttp.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Welcome to Viswadutt&#39;s Personal Page.</description>
 <generator>quarto-1.6.39</generator>
-<lastBuildDate>Sun, 12 Mar 2023 18:30:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 13 Mar 2023 00:00:00 GMT</lastBuildDate>
 <item>
   <title>MBA Fees in India</title>
   <dc:creator>viswadutt </dc:creator>
@@ -29,7 +29,7 @@
   <category>analysis</category>
   <category>MBA</category>
   <guid>https://viswaduttp.github.io/posts/Hello/</guid>
-  <pubDate>Sun, 12 Mar 2023 18:30:00 GMT</pubDate>
+  <pubDate>Mon, 13 Mar 2023 00:00:00 GMT</pubDate>
   <media:content url="https://viswaduttp.github.io/posts/Hello/image.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -51,7 +51,7 @@
   <category>code</category>
   <category>analysis</category>
   <guid>https://viswaduttp.github.io/posts/post-with-code/</guid>
-  <pubDate>Sun, 12 Mar 2023 18:30:00 GMT</pubDate>
+  <pubDate>Mon, 13 Mar 2023 00:00:00 GMT</pubDate>
   <media:content url="https://viswaduttp.github.io/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -76,7 +76,7 @@
  ]]></description>
   <category>tech</category>
   <guid>https://viswaduttp.github.io/posts/welcome/</guid>
-  <pubDate>Thu, 09 Mar 2023 18:30:00 GMT</pubDate>
+  <pubDate>Fri, 10 Mar 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
