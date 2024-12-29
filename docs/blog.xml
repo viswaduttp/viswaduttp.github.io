@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Viswadutt</title>
+<link>https://viswaduttp.github.io/blog.html</link>
+<atom:link href="https://viswaduttp.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<description>Welcome to Viswadutt&#39;s Personal Page.</description>
+<generator>quarto-1.6.39</generator>
+<lastBuildDate>Sun, 12 Mar 2023 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>MBA Fees in India</title>
+  <dc:creator>viswadutt </dc:creator>
+  <link>https://viswaduttp.github.io/posts/Hello/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+
+ ]]></description>
+  <category>news</category>
+  <category>analysis</category>
+  <category>MBA</category>
+  <guid>https://viswaduttp.github.io/posts/Hello/</guid>
+  <pubDate>Sun, 12 Mar 2023 18:30:00 GMT</pubDate>
+  <media:content url="https://viswaduttp.github.io/posts/Hello/image.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Post With Code</title>
+  <dc:creator>Harlow Malloc</dc:creator>
+  <link>https://viswaduttp.github.io/posts/post-with-code/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>This is a post with executable code.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <category>code</category>
+  <category>analysis</category>
+  <guid>https://viswaduttp.github.io/posts/post-with-code/</guid>
+  <pubDate>Sun, 12 Mar 2023 18:30:00 GMT</pubDate>
+  <media:content url="https://viswaduttp.github.io/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>About this website</title>
+  <link>https://viswaduttp.github.io/posts/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>This website is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website</p>
+<ol type="1">
+<li><a href="https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html">Albert Rapp</a></li>
+<li><a href="https://quarto.org/docs/publishing/github-pages.html">Quarto on Github Pages</a></li>
+<li><a href="https://robertmitchellv.com/blog/2022-08-building-with-quarto/building-with-quarto.html">Building with Quarto - Robert Mitchell</a></li>
+<li><a href="https://quarto.org/docs/gallery/#websites">Quarto Gallery</a></li>
+</ol>
+
+
+
+ ]]></description>
+  <category>tech</category>
+  <guid>https://viswaduttp.github.io/posts/welcome/</guid>
+  <pubDate>Thu, 09 Mar 2023 18:30:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

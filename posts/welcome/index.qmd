@@ -9,5 +9,5 @@ This website is made using Quarto. Heavily borrowed from the guide made by Alber
 
 1. [Albert Rapp](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html)
 2. [Quarto on Github Pages](https://quarto.org/docs/publishing/github-pages.html)
-3. https://robertmitchellv.com/blog/2022-08-building-with-quarto/building-with-quarto.html 
+3. [Building with Quarto - Robert Mitchell](https://robertmitchellv.com/blog/2022-08-building-with-quarto/building-with-quarto.html) 
 4. [Quarto Gallery](https://quarto.org/docs/gallery/#websites)

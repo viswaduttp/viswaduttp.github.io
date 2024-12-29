@@ -2,5 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
-
+.DS_Store
+viswaduttp.github.io.Rproj
 /.quarto/
+/_site/
