@@ -1,1 +1,13 @@
 /* css styles */
+.navbar {
+    background-color: #333333; /* Change to your desired color */
+    color: white; /* Change text color */
+}
+
+.navbar a {
+    color: white; /* Change link color */
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Change link hover color */
+}

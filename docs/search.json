@@ -18,7 +18,7 @@
     "href": "posts/welcome/index.html",
     "title": "About this website",
     "section": "",
-    "text": "This website is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website\n\nAlbert Rapp\nQuarto on Github Pages\nBuilding with Quarto - Robert Mitchell\nQuarto Gallery"
+    "text": "This website is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website on github pages are given below.\n\nAlbert Rapp\nQuarto on Github Pages\nBuilding with Quarto - Robert Mitchell\nQuarto Gallery"
   },
   {
     "objectID": "index.html",
