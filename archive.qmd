@@ -6,4 +6,4 @@ listing:
   type: default
   fields: [date, title]
   sort: 'date desc'
----al
+---
