@@ -6,3 +6,12 @@ freeze: true
 
 # Enable banner style title blocks
 title-block-banner: true
+
+# Author name of all blog posts
+author: 'Viswadutt Poduri'
+
+# Table of content settings
+toc: true
+toc-depth: 4
+
+page-layout: article
