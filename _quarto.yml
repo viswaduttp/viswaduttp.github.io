@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Viswadutt"
+  title: "Viswadutt Poduri"
   site-url: https://viswaduttp.github.io/
   description: "Welcome to Viswadutt's Personal Page."
   navbar:

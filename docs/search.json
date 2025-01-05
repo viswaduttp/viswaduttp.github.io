@@ -2,9 +2,9 @@
   {
     "objectID": "blog.html",
     "href": "blog.html",
-    "title": "Viswadutt",
+    "title": "Viswadutt Poduri",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nMBA Fees in India\n\n\n\n\n\n\nnews\n\n\nanalysis\n\n\nMBA\n\n\n\n\n\n\n\n\n\nMar 13, 2023\n\n\n1 min\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 13, 2023\n\n\n1 min\n\n\n\n\n\n\n\nAbout this website\n\n\n\n\n\n\ntech\n\n\n\n\n\n\n\n\n\nMar 10, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nAbout this page\n\n\n\n\n\n\ntech\n\n\n\n\n\n\n\n\n\nMar 10, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -16,9 +16,9 @@
   {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
-    "title": "About this website",
+    "title": "About this page",
     "section": "",
-    "text": "This website is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website on github pages are given below.\n\nAlbert Rapp\nQuarto on Github Pages\nBuilding with Quarto - Robert Mitchell\nQuarto Gallery"
+    "text": "This page is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website on github pages are given below.\n\nAlbert Rapp\nQuarto on Github Pages\nBuilding with Quarto - Robert Mitchell\nQuarto Gallery"
   },
   {
     "objectID": "index.html",
