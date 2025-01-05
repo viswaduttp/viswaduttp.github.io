@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://viswaduttp.github.io/blog.html</loc>
-    <lastmod>2025-01-01T18:17:04.569Z</lastmod>
-  </url>
-  <url>
-    <loc>https://viswaduttp.github.io/posts/Hello/index.html</loc>
-    <lastmod>2025-01-01T18:17:04.577Z</lastmod>
-  </url>
-  <url>
     <loc>https://viswaduttp.github.io/index.html</loc>
-    <lastmod>2025-01-01T18:17:04.577Z</lastmod>
+    <lastmod>2025-01-05T11:05:01.411Z</lastmod>
   </url>
   <url>
-    <loc>https://viswaduttp.github.io/posts/post-with-code/index.html</loc>
-    <lastmod>2025-01-01T18:17:04.581Z</lastmod>
+    <loc>https://viswaduttp.github.io/blog.html</loc>
+    <lastmod>2025-01-05T11:05:01.404Z</lastmod>
   </url>
   <url>
-    <loc>https://viswaduttp.github.io/posts/welcome/index.html</loc>
-    <lastmod>2025-01-01T18:17:04.581Z</lastmod>
+    <loc>https://viswaduttp.github.io/posts/About/index.html</loc>
+    <lastmod>2025-01-05T11:05:01.411Z</lastmod>
   </url>
 </urlset>
