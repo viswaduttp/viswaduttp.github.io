@@ -1,0 +1,15 @@
+{
+  "hash": "271341ce4a8935e88ee78947d89adcc4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Monty Hall Problem\"\ndate: \"2025-01-08\"\ncategories: [Rstats, simulation]\n---\n\n\n\n\nThere are 3 doors (A,B,C) and only 1 door has a car behind it and the other two doors have goats behind them. Say, you have selected door A -  now, the game show host opens B and shows it to be a goat. Now, you have an option to switch the door from A to C. should you switch ? \n\nThis seemingly simple problem statement has tortured novices and pros alike. To answer this question, we need to know how the odds change for winning if we switch vs if we don't. \n When we don't switch the probability of winning would remain at 1/3. When we switch there is 1/3 chance of selecting a car and losing and 2/3 chance of choosing a goat and winning (due to switch), so switching nearly doubles our chances.[Thank you for the extra 33.3%](https://youtu.be/CYyUuIXzGgI?t=155). ^[For a more detailed discussion visit [Brilliant](https://brilliant.org/wiki/monty-hall-problem/).]\n\nI have simulated this scenario below in R\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(dplyr)\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nset.seed(1)\n\n  doors = c('A', 'B', 'C')\n  car_door = sample(doors, size = 10000, replace = T)\n  choosen_door = sample(doors, size = 10000, replace = T)\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nset.seed(1)\n\ntibble(\n       car = car_door,\n       choosen = choosen_door) |>\n  rowwise() |>\n  mutate(door_revealed = sample(setdiff(doors, c(car, choosen)), 1)\n         ) |>\n  mutate(switch = setdiff(doors, c(choosen, door_revealed))) |>\n  ungroup()|>\n  mutate(remain = choosen) %>% \n  mutate(switch_win = ifelse(car == switch, 1, 0),\n         remain_win = ifelse(car == remain, 1, 0)\n         ) |>\n  summarize(\n    switch_win_rate = sum(switch_win)/n(),\n    remain_win_rate = sum(remain_win)/n()\n  )\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n# A tibble: 1 × 2\n  switch_win_rate remain_win_rate\n            <dbl>           <dbl>\n1           0.665           0.335\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

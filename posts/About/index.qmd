@@ -2,7 +2,6 @@
 title: "About this page"
 date: "2023-03-10"
 categories: [tech]
-image: quarto_dallE.jpeg
 
 ---
 
@@ -12,3 +11,5 @@ This page is made using Quarto. Heavily borrowed from the guide made by Albert R
 2. [Quarto on Github Pages](https://quarto.org/docs/publishing/github-pages.html)
 3. [Building with Quarto - Robert Mitchell](https://robertmitchellv.com/blog/2022-08-building-with-quarto/building-with-quarto.html) 
 4. [Quarto Gallery](https://quarto.org/docs/gallery/#websites)
+
+![Generated using Dall-E](quarto_dallE.jpeg)
