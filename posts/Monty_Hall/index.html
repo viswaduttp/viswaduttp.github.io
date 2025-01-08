@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Viswadutt Poduri">
-<meta name="dcterms.date" content="2023-03-10">
+<meta name="dcterms.date" content="2025-01-08">
 
-<title>About this page – Viswadutt Poduri</title>
+<title>Monty Hall Problem – Viswadutt Poduri</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -123,9 +157,10 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About this page</h1>
+<h1 class="title">Monty Hall Problem</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">tech</div>
+    <div class="quarto-category">Rstats</div>
+    <div class="quarto-category">simulation</div>
   </div>
   </div>
 
@@ -143,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 10, 2023</p>
+      <p class="date">January 8, 2025</p>
     </div>
   </div>
   
@@ -155,23 +190,55 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This page is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website on github pages are given below.</p>
-<ol type="1">
-<li><a href="https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html">Albert Rapp</a></li>
-<li><a href="https://quarto.org/docs/publishing/github-pages.html">Quarto on Github Pages</a></li>
-<li><a href="https://robertmitchellv.com/blog/2022-08-building-with-quarto/building-with-quarto.html">Building with Quarto - Robert Mitchell</a></li>
-<li><a href="https://quarto.org/docs/gallery/#websites">Quarto Gallery</a></li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="quarto_dallE.jpeg" class="img-fluid figure-img"></p>
-<figcaption>Generated using Dall-E</figcaption>
-</figure>
+<p>There are 3 doors (A,B,C) and only 1 door has a car behind it and the other two doors have goats behind them. Say, you have selected door A - now, the game show host opens B and shows it to be a goat. Now, you have an option to switch the door from A to C. should you switch ?</p>
+<p>This seemingly simple problem statement has tortured novices and pros alike. To answer this question, we need to know how the odds change for winning if we switch vs if we don’t. When we don’t switch the probability of winning would remain at 1/3. When we switch there is 1/3 chance of selecting a car and losing and 2/3 chance of choosing a goat and winning (due to switch), so switching nearly doubles our chances.<a href="https://youtu.be/CYyUuIXzGgI?t=155">Thank you for the extra 33.3%</a>. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>I have simulated this scenario below in R</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  doors <span class="ot">=</span> <span class="fu">c</span>(<span class="st">'A'</span>, <span class="st">'B'</span>, <span class="st">'C'</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  car_door <span class="ot">=</span> <span class="fu">sample</span>(doors, <span class="at">size =</span> <span class="dv">10000</span>, <span class="at">replace =</span> T)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  choosen_door <span class="ot">=</span> <span class="fu">sample</span>(doors, <span class="at">size =</span> <span class="dv">10000</span>, <span class="at">replace =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">car =</span> car_door,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">choosen =</span> choosen_door) <span class="sc">|&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rowwise</span>() <span class="sc">|&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">door_revealed =</span> <span class="fu">sample</span>(<span class="fu">setdiff</span>(doors, <span class="fu">c</span>(car, choosen)), <span class="dv">1</span>)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>         ) <span class="sc">|&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">switch =</span> <span class="fu">setdiff</span>(doors, <span class="fu">c</span>(choosen, door_revealed))) <span class="sc">|&gt;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()<span class="sc">|&gt;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">remain =</span> choosen) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">switch_win =</span> <span class="fu">ifelse</span>(car <span class="sc">==</span> <span class="cf">switch</span>, <span class="dv">1</span>, <span class="dv">0</span>),</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>         <span class="at">remain_win =</span> <span class="fu">ifelse</span>(car <span class="sc">==</span> remain, <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>         ) <span class="sc">|&gt;</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">switch_win_rate =</span> <span class="fu">sum</span>(switch_win)<span class="sc">/</span><span class="fu">n</span>(),</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">remain_win_rate =</span> <span class="fu">sum</span>(remain_win)<span class="sc">/</span><span class="fu">n</span>()</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 2
+  switch_win_rate remain_win_rate
+            &lt;dbl&gt;           &lt;dbl&gt;
+1           0.665           0.335</code></pre>
+</div>
 </div>
 
 
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>For a more detailed discussion visit <a href="https://brilliant.org/wiki/monty-hall-problem/">Brilliant</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

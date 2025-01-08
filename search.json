@@ -7,17 +7,31 @@
     "text": "Hi, I’m Viswadutt, an accomplished professional with a decade of experience spanning public and private sectors from strategy to finance to research. I’ve worked with both the central and state governments in various capacities - from navigating geostationary satellites to analyzing industrial policy interventions to program managing a team of investment professionals.\nIn the private sector, I’ve worked with the Treasury team of Reliance Industries Limited in economic research and financial planning. Today, I’m part of the analytics division of India’s largest integrated logistics player, where I bring my multidisciplinary expertise to build data-driven solutions.\nMy varied experiences have given me a unique perspective on the intersection of business, technology, and public policy."
   },
   {
+    "objectID": "posts/Monty_Hall/index.html",
+    "href": "posts/Monty_Hall/index.html",
+    "title": "Monty Hall Problem",
+    "section": "",
+    "text": "There are 3 doors (A,B,C) and only 1 door has a car behind it and the other two doors have goats behind them. Say, you have selected door A - now, the game show host opens B and shows it to be a goat. Now, you have an option to switch the door from A to C. should you switch ?\nThis seemingly simple problem statement has tortured novices and pros alike. To answer this question, we need to know how the odds change for winning if we switch vs if we don’t. When we don’t switch the probability of winning would remain at 1/3. When we switch there is 1/3 chance of selecting a car and losing and 2/3 chance of choosing a goat and winning (due to switch), so switching nearly doubles our chances.Thank you for the extra 33.3%. 1\nI have simulated this scenario below in R\nlibrary(dplyr)\nset.seed(1)\n\n  doors = c('A', 'B', 'C')\n  car_door = sample(doors, size = 10000, replace = T)\n  choosen_door = sample(doors, size = 10000, replace = T)\nset.seed(1)\n\ntibble(\n       car = car_door,\n       choosen = choosen_door) |&gt;\n  rowwise() |&gt;\n  mutate(door_revealed = sample(setdiff(doors, c(car, choosen)), 1)\n         ) |&gt;\n  mutate(switch = setdiff(doors, c(choosen, door_revealed))) |&gt;\n  ungroup()|&gt;\n  mutate(remain = choosen) %&gt;% \n  mutate(switch_win = ifelse(car == switch, 1, 0),\n         remain_win = ifelse(car == remain, 1, 0)\n         ) |&gt;\n  summarize(\n    switch_win_rate = sum(switch_win)/n(),\n    remain_win_rate = sum(remain_win)/n()\n  )\n\n# A tibble: 1 × 2\n  switch_win_rate remain_win_rate\n            &lt;dbl&gt;           &lt;dbl&gt;\n1           0.665           0.335"
+  },
+  {
+    "objectID": "posts/Monty_Hall/index.html#footnotes",
+    "href": "posts/Monty_Hall/index.html#footnotes",
+    "title": "Monty Hall Problem",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFor a more detailed discussion visit Brilliant.↩︎"
+  },
+  {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Viswadutt Poduri",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nAbout this page\n\n\n\n\n\n\ntech\n\n\n\n\n\n\n\n\n\nMar 10, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nMonty Hall Problem\n\n\n\n\n\n\nRstats\n\n\nsimulation\n\n\n\n\n\n\n\n\n\nJan 8, 2025\n\n\n2 min\n\n\n\n\n\n\n\nAbout this page\n\n\n\n\n\n\ntech\n\n\n\n\n\n\n\n\n\nMar 10, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/About/index.html",
     "href": "posts/About/index.html",
     "title": "About this page",
     "section": "",
-    "text": "This page is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website on github pages are given below.\n\nAlbert Rapp\nQuarto on Github Pages\nBuilding with Quarto - Robert Mitchell\nQuarto Gallery"
+    "text": "This page is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website on github pages are given below.\n\nAlbert Rapp\nQuarto on Github Pages\nBuilding with Quarto - Robert Mitchell\nQuarto Gallery\n\n\n\n\nGenerated using Dall-E"
   }
 ]
