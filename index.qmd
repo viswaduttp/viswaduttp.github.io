@@ -3,6 +3,7 @@ title: "About Me"
 image: profile1.jpg
 about:
   template: solana
+  image-width: 200px
   links:
     - icon: linkedin
       text: LinkedIn

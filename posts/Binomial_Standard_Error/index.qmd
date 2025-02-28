@@ -1,0 +1,25 @@
+---
+title: "Standard Error in Binomial Distribution"
+date: "2025-01-19"
+categories: [Rstats, theory]
+---
+
+A coin is tossed 1000 times and it landed heads 400 times. How confident we are whether the coin is fair ?
+
+We can do a test of proportions, and our test statistic is ($\bar{p}$-${P}$)/$\sqrt{PQ/n}$
+
+The sample size (n) is 1000 and we have observed heads 400 times meaning 
+$\bar{p}$ = 0.4 and $\bar{q}$  = 0.6. 
+
+The sample mean $\bar{x}$ is 400 (1000 x 0.4) (X is binomial)
+
+here P = Q = 0.5 (population estimate)
+
+Now the denominator $\sqrt{PQ/n}$ is the standard error of the sample proportion $\bar{p}$
+
+This variance scaling is not really intuitive at the first look.
+
+The variance is scaled by square of n, so the variance of sample proportion is ${nPQ/n^2}$ which is PQ/n and hence the standard error (same as standard deviation) is $\sqrt{PQ/n}$
+
+We could have solved the problem by testing number of heads instead of proportion of heads (400-500/15.81). 15.81 is just simply $\sqrt{0.5*.0.5*1000}$
+

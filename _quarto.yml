@@ -8,8 +8,12 @@ website:
   description: "Welcome to Viswadutt's Personal Page."
   navbar:
     right:
+      - text: Home
+        href: index.qmd
       - text: Blog
         href: blog.qmd 
+      - icon: linkedin
+        href: https://www.linkedin.com/in/viswadutt/
       - icon: github
         href: https://github.com/viswaduttp
       - icon: twitter
