@@ -9,8 +9,35 @@
 <link>https://viswaduttp.github.io/blog.html</link>
 <atom:link href="https://viswaduttp.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Welcome to Viswadutt&#39;s Personal Page.</description>
-<generator>quarto-1.6.40</generator>
-<lastBuildDate>Wed, 08 Jan 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.42</generator>
+<lastBuildDate>Sun, 19 Jan 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Standard Error in Binomial Distribution</title>
+  <dc:creator>Viswadutt Poduri</dc:creator>
+  <link>https://viswaduttp.github.io/posts/Binomial_Standard_Error/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A coin is tossed 1000 times and it landed heads 400 times. How confident we are whether the coin is fair ?</p>
+<p>We can do a test of proportions, and our test statistic is (<img src="https://latex.codecogs.com/png.latex?%5Cbar%7Bp%7D">-<img src="https://latex.codecogs.com/png.latex?%7BP%7D">)/<img src="https://latex.codecogs.com/png.latex?%5Csqrt%7BPQ/n%7D"></p>
+<p>The sample size (n) is 1000 and we have observed heads 400 times meaning <img src="https://latex.codecogs.com/png.latex?%5Cbar%7Bp%7D"> = 0.4 and <img src="https://latex.codecogs.com/png.latex?%5Cbar%7Bq%7D"> = 0.6.</p>
+<p>The sample mean <img src="https://latex.codecogs.com/png.latex?%5Cbar%7Bx%7D"> is 400 (1000 x 0.4) (X is binomial)</p>
+<p>here P = Q = 0.5 (population estimate)</p>
+<p>Now the denominator <img src="https://latex.codecogs.com/png.latex?%5Csqrt%7BPQ/n%7D"> is the standard error of the sample proportion <img src="https://latex.codecogs.com/png.latex?%5Cbar%7Bp%7D"></p>
+<p>This variance scaling is not really intuitive at the first look.</p>
+<p>The variance is scaled by square of n, so the variance of sample proportion is <img src="https://latex.codecogs.com/png.latex?%7BnPQ/n%5E2%7D"> which is PQ/n and hence the standard error (same as standard deviation) is <img src="https://latex.codecogs.com/png.latex?%5Csqrt%7BPQ/n%7D"></p>
+<p>We could have solved the problem by testing number of heads instead of proportion of heads (400-500/15.81). 15.81 is just simply <img src="https://latex.codecogs.com/png.latex?%5Csqrt%7B0.5*.0.5*1000%7D"></p>
+
+
+
+ ]]></description>
+  <category>Rstats</category>
+  <category>theory</category>
+  <guid>https://viswaduttp.github.io/posts/Binomial_Standard_Error/</guid>
+  <pubDate>Sun, 19 Jan 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Monty Hall Problem</title>
   <dc:creator>Viswadutt Poduri</dc:creator>

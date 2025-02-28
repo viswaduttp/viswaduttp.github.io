@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/Binomial_Standard_Error/index.html",
       "/posts/Monty_Hall/index.html",
       "/posts/About/index.html"
     ]

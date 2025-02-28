@@ -11,3 +11,8 @@
 .navbar a:hover {
     color: #ffcc00; /* Change link hover color */
 }
+
+.about img {
+  border-radius: 100%;
+  margin: 0 auto;
+}
