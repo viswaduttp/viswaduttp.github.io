@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-83f9f74f71d394a54e3f5ca72b82b566.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -164,7 +164,7 @@ window.Quarto = {
 <h1 class="title">Standard Error in Binomial Distribution</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Rstats</div>
-    <div class="quarto-category">simulation</div>
+    <div class="quarto-category">theory</div>
   </div>
   </div>
 
@@ -195,13 +195,14 @@ window.Quarto = {
 
 
 <p>A coin is tossed 1000 times and it landed heads 400 times. How confident we are whether the coin is fair ?</p>
-<p>This is a pretty standard hypothesis testing problem.</p>
+<p>We can do a test of proportions, and our test statistic is (<span class="math inline">\(\bar{p}\)</span>-<span class="math inline">\({P}\)</span>)/<span class="math inline">\(\sqrt{PQ/n}\)</span></p>
 <p>The sample size (n) is 1000 and we have observed heads 400 times meaning <span class="math inline">\(\bar{p}\)</span> = 0.4 and <span class="math inline">\(\bar{q}\)</span> = 0.6.</p>
-<p>The sample mean <span class="math inline">\(\bar{x}\)</span> is 400 and the sample standard deviation (s) is <span class="math inline">\(\sqrt{1000*0.4*0.6}\)</span> ~ 15.49</p>
-<p>Now we do a test of proportions and our test statistic is (<span class="math inline">\(\bar{p}\)</span>-<span class="math inline">\({P}\)</span>)/<span class="math inline">\(\sqrt{PQ/n}\)</span></p>
-<p>here P = Q = 0.5</p>
+<p>The sample mean <span class="math inline">\(\bar{x}\)</span> is 400 (1000 x 0.4) (X is binomial)</p>
+<p>here P = Q = 0.5 (population estimate)</p>
 <p>Now the denominator <span class="math inline">\(\sqrt{PQ/n}\)</span> is the standard error of the sample proportion <span class="math inline">\(\bar{p}\)</span></p>
-<p>The variance is scaled by square of n, so the variance of sample proportion is <span class="math inline">\({nPQ/n^{2}\)</span> which is PQ/n and hence the standard error is <span class="math inline">\(\sqrt{PQ/n}\)</span></p>
+<p>This variance scaling is not really intuitive at the first look.</p>
+<p>The variance is scaled by square of n, so the variance of sample proportion is <span class="math inline">\({nPQ/n^2}\)</span> which is PQ/n and hence the standard error (same as standard deviation) is <span class="math inline">\(\sqrt{PQ/n}\)</span></p>
+<p>We could have solved the problem by testing number of heads instead of proportion of heads (400-500/15.81). 15.81 is just simply <span class="math inline">\(\sqrt{0.5*.0.5*1000}\)</span></p>
 
 
 
