@@ -6,11 +6,11 @@
       version="2.0">
 <channel>
 <title>Viswadutt Poduri</title>
-<link>https://viswaduttp.github.io/blog.html</link>
-<atom:link href="https://viswaduttp.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://viswaduttp.github.io/</link>
+<atom:link href="https://viswaduttp.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Welcome to Viswadutt&#39;s Personal Page.</description>
-<generator>quarto-1.6.39</generator>
-<lastBuildDate>Fri, 04 Jul 2025 18:30:00 GMT</lastBuildDate>
+<generator>quarto-1.7.32</generator>
+<lastBuildDate>Sat, 05 Jul 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>CSV to Parquet</title>
   <dc:creator>Viswadutt Poduri</dc:creator>
@@ -20,7 +20,8 @@
 
 
 
-<p>Sharing my material for my talk, <em>CSV to Parquet: Managing Data for Multi-language Analytics Teams</em></p>
+
+<p>Sharing slides of my proposed talk, <em>CSV to Parquet: Managing Data for Multi-language Analytics Teams</em></p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 <p><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQpGIN2Ol9lk7GC3lIUku96-KWPFs8qzF9pd7Qf45a0y5m2SVjLKLWo8vgfxi99BvSm2_jx7wm8RqB2/pubembed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"> </iframe></p>
 </div>
@@ -32,13 +33,14 @@
   <category>talk</category>
   <category>useR</category>
   <guid>https://viswaduttp.github.io/posts/useR_2025/</guid>
-  <pubDate>Fri, 04 Jul 2025 18:30:00 GMT</pubDate>
+  <pubDate>Sat, 05 Jul 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Standard Error in Binomial Distribution</title>
   <dc:creator>Viswadutt Poduri</dc:creator>
   <link>https://viswaduttp.github.io/posts/Binomial_Standard_Error/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -59,13 +61,14 @@
   <category>Rstats</category>
   <category>theory</category>
   <guid>https://viswaduttp.github.io/posts/Binomial_Standard_Error/</guid>
-  <pubDate>Sat, 18 Jan 2025 18:30:00 GMT</pubDate>
+  <pubDate>Sun, 19 Jan 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Monty Hall Problem</title>
   <dc:creator>Viswadutt Poduri</dc:creator>
   <link>https://viswaduttp.github.io/posts/Monty_Hall/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -253,13 +256,14 @@ font-style: inherit;">n</span>()</span>
   <category>Rstats</category>
   <category>simulation</category>
   <guid>https://viswaduttp.github.io/posts/Monty_Hall/</guid>
-  <pubDate>Tue, 07 Jan 2025 18:30:00 GMT</pubDate>
+  <pubDate>Wed, 08 Jan 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>About this page</title>
   <dc:creator>Viswadutt Poduri</dc:creator>
   <link>https://viswaduttp.github.io/posts/About/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -283,7 +287,7 @@ font-style: inherit;">n</span>()</span>
  ]]></description>
   <category>tech</category>
   <guid>https://viswaduttp.github.io/posts/About/</guid>
-  <pubDate>Thu, 09 Mar 2023 18:30:00 GMT</pubDate>
+  <pubDate>Fri, 10 Mar 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
