@@ -7,11 +7,12 @@ website:
   site-url: https://viswaduttp.github.io/
   description: "Welcome to Viswadutt's Personal Page."
   navbar:
+    title: Viswadutt's Blog
     right:
-      - text: Home
-        href: index.qmd
+      - text: About
+        href: About.qmd
       - text: Blog
-        href: blog.qmd 
+        href: index.qmd 
       - icon: linkedin
         href: https://www.linkedin.com/in/viswadutt/
       - icon: github

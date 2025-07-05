@@ -1,0 +1,27 @@
+---
+title: "About Me"
+image: profile1.jpg
+about:
+  template: solana
+  image-width: 200px
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/viswadutt/
+    - icon: github
+      text: Github
+      href: https://github.com/viswaduttp
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/viswadutt
+
+---
+
+Hi, I'm Viswadutt, an accomplished professional with a decade of experience spanning public and private sectors from strategy to finance to research. I've worked with both the central and state governments in various capacities - from navigating geostationary satellites to analyzing industrial policy interventions to program managing a team of investment professionals. 
+
+In the private sector, I've worked with the Treasury team of Reliance Industries Limited in economic research and financial planning. Today, I'm part of the analytics division of India's largest integrated logistics player, where I bring my multidisciplinary expertise to build data-driven solutions. 
+
+My varied experiences have given me a unique perspective on the intersection of business, technology, and public policy.
+
+
+

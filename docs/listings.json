@@ -2,6 +2,16 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/useR_2025/index.html",
+      "/posts/Binomial_Standard_Error/index.html",
+      "/posts/Monty_Hall/index.html",
+      "/posts/About/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/useR_2025/index.html",
       "/posts/Binomial_Standard_Error/index.html",
       "/posts/Monty_Hall/index.html",
       "/posts/About/index.html"
