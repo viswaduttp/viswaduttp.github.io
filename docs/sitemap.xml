@@ -1,39 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://viswaduttp.github.io/blog.html</loc>
-    <lastmod>2025-01-01T18:16:09.077Z</lastmod>
+    <loc>https://viswaduttp.github.io/About.html</loc>
+    <lastmod>2025-09-13T11:34:54.469Z</lastmod>
   </url>
   <url>
     <loc>https://viswaduttp.github.io/posts/Monty_Hall/index.html</loc>
-    <lastmod>2025-01-08T17:05:02.653Z</lastmod>
-  </url>
-  <url>
-    <loc>https://viswaduttp.github.io/posts/Binomial_Standard_Error/index.html</loc>
-    <lastmod>2025-02-28T18:20:56.894Z</lastmod>
+    <lastmod>2025-06-29T18:07:16.145Z</lastmod>
   </url>
   <url>
     <loc>https://viswaduttp.github.io/posts/About/index.html</loc>
-    <lastmod>2025-01-08T17:09:27.241Z</lastmod>
+    <lastmod>2025-06-29T18:07:16.144Z</lastmod>
   </url>
   <url>
-    <loc>https://viswaduttp.github.io/index.html</loc>
-    <lastmod>2025-01-01T18:16:09.077Z</lastmod>
+    <loc>https://viswaduttp.github.io/posts/Binomial_Standard_Error/index.html</loc>
+    <lastmod>2025-06-29T18:07:16.145Z</lastmod>
   </url>
   <url>
     <loc>https://viswaduttp.github.io/posts/useR_2025/index.html</loc>
-    <lastmod>2025-07-05T06:47:43.456Z</lastmod>
+    <lastmod>2025-09-13T12:21:22.822Z</lastmod>
   </url>
   <url>
-    <loc>https://viswaduttp.github.io/About.html</loc>
-    <lastmod>2025-01-08T17:35:26.140Z</lastmod>
-  </url>
-  <url>
-    <loc>https://viswaduttp.github.io/About.html/index.html</loc>
-    <lastmod>2025-01-01T18:16:09.077Z</lastmod>
-  </url>
-  <url>
-    <loc>https://viswaduttp.github.io/About.html/About.html</loc>
-    <lastmod>2025-01-08T17:35:26.140Z</lastmod>
+    <loc>https://viswaduttp.github.io/index.html</loc>
+    <lastmod>2025-09-13T11:34:54.477Z</lastmod>
   </url>
 </urlset>

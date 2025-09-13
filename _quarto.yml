@@ -6,6 +6,9 @@ website:
   title: "Viswadutt Poduri"
   site-url: https://viswaduttp.github.io/
   description: "Welcome to Viswadutt's Personal Page."
+  image: images/default.png
+  open-graph: true
+  twitter-card: true
   navbar:
     title: Viswadutt's Blog
     right:
@@ -19,6 +22,8 @@ website:
         href: https://github.com/viswaduttp
       - icon: twitter
         href: https://twitter.com/viswadutt
+    listing: 
+    image-placeholder: images/listing_thumbnail.png
 format:
   html:
     theme: 
@@ -28,4 +33,3 @@ format:
     toc: true
 execute:
   freeze: auto
-

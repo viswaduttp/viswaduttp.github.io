@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Viswadutt Poduri",
+    "objectID": "About.html",
+    "href": "About.html",
+    "title": "About Me",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nCSV to Parquet\n\n\n\n\n\n\nRstats\n\n\ntalk\n\n\nuseR\n\n\n\n\n\n\n\n\n\nJul 5, 2025\n\n\n1 min\n\n\n\n\n\n\n\nStandard Error in Binomial Distribution\n\n\n\n\n\n\nRstats\n\n\ntheory\n\n\n\n\n\n\n\n\n\nJan 19, 2025\n\n\n1 min\n\n\n\n\n\n\n\nMonty Hall Problem\n\n\n\n\n\n\nRstats\n\n\nsimulation\n\n\n\n\n\n\n\n\n\nJan 8, 2025\n\n\n2 min\n\n\n\n\n\n\n\nAbout this page\n\n\n\n\n\n\ntech\n\n\n\n\n\n\n\n\n\nMar 10, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Hi, I’m Viswadutt, an accomplished professional with a decade of experience spanning public and private sectors from strategy to finance to research. I’ve worked with both the central and state governments in various capacities - from navigating geostationary satellites to analyzing industrial policy interventions to program managing a team of investment professionals.\nIn the private sector, I’ve worked with the Treasury team of Reliance Industries Limited in economic research and financial planning. Today, I’m part of the analytics division of India’s largest integrated logistics player, where I bring my multidisciplinary expertise to build data-driven solutions.\nMy varied experiences have given me a unique perspective on the intersection of business, technology, and public policy."
   },
   {
     "objectID": "posts/Monty_Hall/index.html",
@@ -21,13 +21,6 @@
     "text": "Footnotes\n\n\nFor a more detailed discussion visit Brilliant.↩︎"
   },
   {
-    "objectID": "posts/Binomial_Standard_Error/index.html",
-    "href": "posts/Binomial_Standard_Error/index.html",
-    "title": "Standard Error in Binomial Distribution",
-    "section": "",
-    "text": "A coin is tossed 1000 times and it landed heads 400 times. How confident we are whether the coin is fair ?\nWe can do a test of proportions, and our test statistic is (\\(\\bar{p}\\)-\\({P}\\))/\\(\\sqrt{PQ/n}\\)\nThe sample size (n) is 1000 and we have observed heads 400 times meaning \\(\\bar{p}\\) = 0.4 and \\(\\bar{q}\\) = 0.6.\nThe sample mean \\(\\bar{x}\\) is 400 (1000 x 0.4) (X is binomial)\nhere P = Q = 0.5 (population estimate)\nNow the denominator \\(\\sqrt{PQ/n}\\) is the standard error of the sample proportion \\(\\bar{p}\\)\nThis variance scaling is not really intuitive at the first look.\nThe variance is scaled by square of n, so the variance of sample proportion is \\({nPQ/n^2}\\) which is PQ/n and hence the standard error (same as standard deviation) is \\(\\sqrt{PQ/n}\\)\nWe could have solved the problem by testing number of heads instead of proportion of heads (400-500/15.81). 15.81 is just simply \\(\\sqrt{0.5*.0.5*1000}\\)"
-  },
-  {
     "objectID": "posts/About/index.html",
     "href": "posts/About/index.html",
     "title": "About this page",
@@ -35,24 +28,38 @@
     "text": "This page is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website on github pages are given below.\n\nAlbert Rapp\nQuarto on Github Pages\nBuilding with Quarto - Robert Mitchell\nQuarto Gallery\n\n\n\n\nGenerated using Dall-E"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Viswadutt Poduri",
+    "objectID": "posts/Binomial_Standard_Error/index.html",
+    "href": "posts/Binomial_Standard_Error/index.html",
+    "title": "Standard Error in Binomial Distribution",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nCSV to Parquet\n\n\n\n\n\n\nRstats\n\n\ntalk\n\n\nuseR\n\n\n\n\n\n\n\n\n\nJul 5, 2025\n\n\n1 min\n\n\n\n\n\n\n\nStandard Error in Binomial Distribution\n\n\n\n\n\n\nRstats\n\n\ntheory\n\n\n\n\n\n\n\n\n\nJan 19, 2025\n\n\n1 min\n\n\n\n\n\n\n\nMonty Hall Problem\n\n\n\n\n\n\nRstats\n\n\nsimulation\n\n\n\n\n\n\n\n\n\nJan 8, 2025\n\n\n2 min\n\n\n\n\n\n\n\nAbout this page\n\n\n\n\n\n\ntech\n\n\n\n\n\n\n\n\n\nMar 10, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+    "text": "A coin is tossed 1000 times and it landed heads 400 times. How confident we are whether the coin is fair ?\nWe can do a test of proportions, and our test statistic is (\\(\\bar{p}\\)-\\({P}\\))/\\(\\sqrt{PQ/n}\\)\nThe sample size (n) is 1000 and we have observed heads 400 times meaning \\(\\bar{p}\\) = 0.4 and \\(\\bar{q}\\) = 0.6.\nThe sample mean \\(\\bar{x}\\) is 400 (1000 x 0.4) (X is binomial)\nhere P = Q = 0.5 (population estimate)\nNow the denominator \\(\\sqrt{PQ/n}\\) is the standard error of the sample proportion \\(\\bar{p}\\)\nThis variance scaling is not really intuitive at the first look.\nThe variance is scaled by square of n, so the variance of sample proportion is \\({nPQ/n^2}\\) which is PQ/n and hence the standard error (same as standard deviation) is \\(\\sqrt{PQ/n}\\)\nWe could have solved the problem by testing number of heads instead of proportion of heads (400-500/15.81). 15.81 is just simply \\(\\sqrt{0.5*.0.5*1000}\\)"
   },
   {
     "objectID": "posts/useR_2025/index.html",
     "href": "posts/useR_2025/index.html",
     "title": "CSV to Parquet",
     "section": "",
-    "text": "Sharing slides of my proposed talk, CSV to Parquet: Managing Data for Multi-language Analytics Teams"
+    "text": "Sharing slides of my talk, CSV to Parquet: Managing Data for Multi-language Analytics Teams"
   },
   {
-    "objectID": "About.html",
-    "href": "About.html",
-    "title": "About Me",
+    "objectID": "posts/useR_2025/index.html#slides",
+    "href": "posts/useR_2025/index.html#slides",
+    "title": "CSV to Parquet",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "posts/useR_2025/index.html#talk",
+    "href": "posts/useR_2025/index.html#talk",
+    "title": "CSV to Parquet",
+    "section": "Talk",
+    "text": "Talk"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Viswadutt Poduri",
     "section": "",
-    "text": "Hi, I’m Viswadutt, an accomplished professional with a decade of experience spanning public and private sectors from strategy to finance to research. I’ve worked with both the central and state governments in various capacities - from navigating geostationary satellites to analyzing industrial policy interventions to program managing a team of investment professionals.\nIn the private sector, I’ve worked with the Treasury team of Reliance Industries Limited in economic research and financial planning. Today, I’m part of the analytics division of India’s largest integrated logistics player, where I bring my multidisciplinary expertise to build data-driven solutions.\nMy varied experiences have given me a unique perspective on the intersection of business, technology, and public policy."
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nCSV to Parquet\n\n\n\n\n\n\nRstats\n\n\ntalk\n\n\nuseR\n\n\n\n\n\n\n\n\n\nJul 5, 2025\n\n\n2 min\n\n\n\n\n\n\n\nStandard Error in Binomial Distribution\n\n\n\n\n\n\nRstats\n\n\ntheory\n\n\n\n\n\n\n\n\n\nJan 19, 2025\n\n\n1 min\n\n\n\n\n\n\n\nMonty Hall Problem\n\n\n\n\n\n\nRstats\n\n\nsimulation\n\n\n\n\n\n\n\n\n\nJan 8, 2025\n\n\n2 min\n\n\n\n\n\n\n\nAbout this page\n\n\n\n\n\n\ntech\n\n\n\n\n\n\n\n\n\nMar 10, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
   }
 ]
