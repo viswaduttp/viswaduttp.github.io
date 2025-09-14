@@ -16,13 +16,14 @@
 <height>96</height>
 <width>144</width>
 </image>
-<generator>quarto-1.6.42</generator>
-<lastBuildDate>Fri, 04 Jul 2025 18:30:00 GMT</lastBuildDate>
+<generator>quarto-1.8.24</generator>
+<lastBuildDate>Sat, 05 Jul 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>CSV to Parquet</title>
   <dc:creator>Viswadutt Poduri</dc:creator>
   <link>https://viswaduttp.github.io/posts/useR_2025/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -55,7 +56,7 @@
   <category>talk</category>
   <category>useR</category>
   <guid>https://viswaduttp.github.io/posts/useR_2025/</guid>
-  <pubDate>Fri, 04 Jul 2025 18:30:00 GMT</pubDate>
+  <pubDate>Sat, 05 Jul 2025 00:00:00 GMT</pubDate>
   <media:content url="https://viswaduttp.github.io/posts/useR_2025/slide.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -63,6 +64,7 @@
   <dc:creator>Viswadutt Poduri</dc:creator>
   <link>https://viswaduttp.github.io/posts/Binomial_Standard_Error/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -83,7 +85,7 @@
   <category>Rstats</category>
   <category>theory</category>
   <guid>https://viswaduttp.github.io/posts/Binomial_Standard_Error/</guid>
-  <pubDate>Sat, 18 Jan 2025 18:30:00 GMT</pubDate>
+  <pubDate>Sun, 19 Jan 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Monty Hall Problem</title>
@@ -94,16 +96,17 @@
 
 
 
+
 <p>There are 3 doors (A,B,C) and only 1 door has a car behind it and the other two doors have goats behind them. Say, you have selected door A - now, the game show host opens B and shows it to be a goat. Now, you have an option to switch the door from A to C. should you switch ?</p>
 <p>This seemingly simple problem statement has tortured novices and pros alike. To answer this question, we need to know how the odds change for winning if we switch vs if we don’t. When we don’t switch the probability of winning would remain at 1/3. When we switch there is 1/3 chance of selecting a car and losing and 2/3 chance of choosing a goat and winning (due to switch), so switching nearly doubles our chances.<a href="https://youtu.be/CYyUuIXzGgI?t=155">Thank you for the extra 33.3%</a>. <sup>1</sup></p>
 <p>I have simulated this scenario below in R</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">library</span>(dplyr)</span></code></pre></div>
+font-style: inherit;">library</span>(dplyr)</span></code></pre></div></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">set.seed</span>(<span class="dv" style="color: #AD0000;
 background-color: null;
@@ -141,10 +144,10 @@ font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">10000</span>, <span class="at" style="color: #657422;
 background-color: null;
-font-style: inherit;">replace =</span> T)</span></code></pre></div>
+font-style: inherit;">replace =</span> T)</span></code></pre></div></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">set.seed</span>(<span class="dv" style="color: #AD0000;
 background-color: null;
@@ -256,7 +259,7 @@ background-color: null;
 font-style: inherit;">/</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">n</span>()</span>
-<span id="cb3-18">  )</span></code></pre></div>
+<span id="cb3-18">  )</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 2
   switch_win_rate remain_win_rate
@@ -277,13 +280,15 @@ font-style: inherit;">n</span>()</span>
   <category>Rstats</category>
   <category>simulation</category>
   <guid>https://viswaduttp.github.io/posts/Monty_Hall/</guid>
-  <pubDate>Tue, 07 Jan 2025 18:30:00 GMT</pubDate>
+  <pubDate>Wed, 08 Jan 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://viswaduttp.github.io/posts/Monty_Hall/genai_monty.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
   <title>About this page</title>
   <dc:creator>Viswadutt Poduri</dc:creator>
   <link>https://viswaduttp.github.io/posts/About/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -307,7 +312,8 @@ font-style: inherit;">n</span>()</span>
  ]]></description>
   <category>tech</category>
   <guid>https://viswaduttp.github.io/posts/About/</guid>
-  <pubDate>Thu, 09 Mar 2023 18:30:00 GMT</pubDate>
+  <pubDate>Fri, 10 Mar 2023 00:00:00 GMT</pubDate>
+  <media:content url="https://viswaduttp.github.io/posts/About/quarto_dallE.jpeg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

@@ -2,10 +2,13 @@
 title: "Monty Hall Problem"
 date: "2025-01-08"
 categories: [Rstats, simulation]
+image: genai_monty.png
 ---
 
 
 There are 3 doors (A,B,C) and only 1 door has a car behind it and the other two doors have goats behind them. Say, you have selected door A -  now, the game show host opens B and shows it to be a goat. Now, you have an option to switch the door from A to C. should you switch ? 
+
+![Generated using Dall-E](genai_monty.png)
 
 This seemingly simple problem statement has tortured novices and pros alike. To answer this question, we need to know how the odds change for winning if we switch vs if we don't. 
  When we don't switch the probability of winning would remain at 1/3. When we switch there is 1/3 chance of selecting a car and losing and 2/3 chance of choosing a goat and winning (due to switch), so switching nearly doubles our chances.[Thank you for the extra 33.3%](https://youtu.be/CYyUuIXzGgI?t=155). ^[For a more detailed discussion visit [Brilliant](https://brilliant.org/wiki/monty-hall-problem/).]

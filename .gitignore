@@ -6,3 +6,4 @@
 viswaduttp.github.io.Rproj
 /.quarto/
 /_site/
+**/*.quarto_ipynb

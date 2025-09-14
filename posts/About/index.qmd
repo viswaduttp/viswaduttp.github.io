@@ -2,6 +2,7 @@
 title: "About this page"
 date: "2023-03-10"
 categories: [tech]
+image: quarto_dallE.jpeg
 
 ---
 
