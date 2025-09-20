@@ -16,14 +16,71 @@
 <height>96</height>
 <width>144</width>
 </image>
-<generator>quarto-1.8.24</generator>
-<lastBuildDate>Sat, 05 Jul 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.42</generator>
+<lastBuildDate>Thu, 18 Sep 2025 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>Loan vs FD</title>
+  <dc:creator>Viswadutt Poduri</dc:creator>
+  <link>https://viswaduttp.github.io/posts/Loan_vs_FD/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Recently, I came across a video which says that if you have INR 10 lakh and want to buy a car, it is better to buy via loan than to pay the 10 lakh upfront. The proof was the screenshots of interest paid in the loan and interest received from FD. To put it in numbers, if you invest the 10lakh in a bank FD the interest amount you get at say 8% rate in say, 5 years is higher than the interest you need to pay on the loan say, at 9% rate. The ‘reason’ offered for this difference was - bank FD is compounded over 5 years vs the car loan which is on a reducing balance, so you will be better off taking a loan at a higher rate than the FD rate.</p>
+<p>I have got these numbers from Groww for easy representation</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://viswaduttp.github.io/posts/Loan_vs_FD/fd.png" class="img-fluid figure-img"></p>
+<figcaption>from Growww</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://viswaduttp.github.io/posts/Loan_vs_FD/car_loan.png" class="img-fluid figure-img"></p>
+<figcaption>from Growww</figcaption>
+</figure>
+</div>
+<p>The statement above made by the influencer is clearly wrong and see if you could identify the fallacy.</p>
+<p>If the statement is true, then there is an arbitrage opportunity to make free money, take a 10lakh loan at 9% and invest in bank FD at 8% and make money at the end ?</p>
+<p>The interest rate in the (car) loan is for the time value of money plus the risk premium, sure the interest component of EMI reduces as you pay down your loan every month. But, is it correct to say you would be better off taking the loan at a higher rate (than what you would get in a FD) and investing the 10lakh in FD ? for a moment forget about tax on FD. The FD’s future value of INR 14.85 lakh after 5 years means that it is equal to today’s 10lakh at 8% annual discount rate <sup>1</sup>. You can see that the FD amount is paid to the investor in full only after the term, not during the term. So, if we want to compare the loan, it is only fair that you compare the payments in the same terms.</p>
+<section id="calcualation" class="level2">
+<h2 class="anchored" data-anchor-id="calcualation">Calcualation</h2>
+<p>EMI for a 10 lakh loan at 9% annual interest rate for 5 years is 20.75k. Then there is a bank FD that pays 8% annual interest on the investment compounded monthly. Assume you can withdraw the EMI amount from the bank to meet the payment. If the bank FD is really beneficial at the end we will be left with money, but instead we will be short by 2EMIs.</p>
+<div>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT9QjON3cO3RIOmzosj209DVAmEfummr4A1325JDQfuW3F3Dk_SnVTbE41zL0mNhOjmlXd20s8j-7Ho/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="800" height="600">
+</iframe>
+</div>
+<p><a href="https://docs.google.com/spreadsheets/d/1-UjxOJfWO8AqpFmxnsesvJ6g-phv5xMcLffyQkxdSVw/" target="_blank"> Click here to open the Google Sheet </a></p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>I would think that the reason one should take a loan even though they have ready cash is related to optionality of cash and risk taking options. If you have 10 lakh cash in FD, you can sleep in peace knowing that you can get ready cash by breaking the FD in case of any emergency (reduced interest is only a small price to pay). Or you want to deploy the cash in an investment over a period of time.</p>
+<p>PS: I surely have spent more effort in refuting the bullshit inline with the Bullshit Asymmetry Principle</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>The compounding done by Groww is quarterly so the annual return is ~8.2%4↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>Excel</category>
+  <category>loan</category>
+  <category>FD</category>
+  <category>EMI</category>
+  <guid>https://viswaduttp.github.io/posts/Loan_vs_FD/</guid>
+  <pubDate>Thu, 18 Sep 2025 18:30:00 GMT</pubDate>
+  <media:content url="https://viswaduttp.github.io/posts/Loan_vs_FD/thumbnail.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
 <item>
   <title>CSV to Parquet</title>
   <dc:creator>Viswadutt Poduri</dc:creator>
   <link>https://viswaduttp.github.io/posts/useR_2025/</link>
   <description><![CDATA[ 
-
 
 
 
@@ -56,7 +113,7 @@
   <category>talk</category>
   <category>useR</category>
   <guid>https://viswaduttp.github.io/posts/useR_2025/</guid>
-  <pubDate>Sat, 05 Jul 2025 00:00:00 GMT</pubDate>
+  <pubDate>Fri, 04 Jul 2025 18:30:00 GMT</pubDate>
   <media:content url="https://viswaduttp.github.io/posts/useR_2025/slide.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -64,7 +121,6 @@
   <dc:creator>Viswadutt Poduri</dc:creator>
   <link>https://viswaduttp.github.io/posts/Binomial_Standard_Error/</link>
   <description><![CDATA[ 
-
 
 
 
@@ -85,7 +141,8 @@
   <category>Rstats</category>
   <category>theory</category>
   <guid>https://viswaduttp.github.io/posts/Binomial_Standard_Error/</guid>
-  <pubDate>Sun, 19 Jan 2025 00:00:00 GMT</pubDate>
+  <pubDate>Sat, 18 Jan 2025 18:30:00 GMT</pubDate>
+  <media:content url="https://viswaduttp.github.io/images/listing_thumbnail.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
   <title>Monty Hall Problem</title>
@@ -96,17 +153,22 @@
 
 
 
-
 <p>There are 3 doors (A,B,C) and only 1 door has a car behind it and the other two doors have goats behind them. Say, you have selected door A - now, the game show host opens B and shows it to be a goat. Now, you have an option to switch the door from A to C. should you switch ?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://viswaduttp.github.io/posts/Monty_Hall/genai_monty.png" class="img-fluid figure-img"></p>
+<figcaption>Generated using Dall-E</figcaption>
+</figure>
+</div>
 <p>This seemingly simple problem statement has tortured novices and pros alike. To answer this question, we need to know how the odds change for winning if we switch vs if we don’t. When we don’t switch the probability of winning would remain at 1/3. When we switch there is 1/3 chance of selecting a car and losing and 2/3 chance of choosing a goat and winning (due to switch), so switching nearly doubles our chances.<a href="https://youtu.be/CYyUuIXzGgI?t=155">Thank you for the extra 33.3%</a>. <sup>1</sup></p>
 <p>I have simulated this scenario below in R</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">library</span>(dplyr)</span></code></pre></div></div>
+font-style: inherit;">library</span>(dplyr)</span></code></pre></div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">set.seed</span>(<span class="dv" style="color: #AD0000;
 background-color: null;
@@ -144,10 +206,10 @@ font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">10000</span>, <span class="at" style="color: #657422;
 background-color: null;
-font-style: inherit;">replace =</span> T)</span></code></pre></div></div>
+font-style: inherit;">replace =</span> T)</span></code></pre></div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">set.seed</span>(<span class="dv" style="color: #AD0000;
 background-color: null;
@@ -259,7 +321,7 @@ background-color: null;
 font-style: inherit;">/</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">n</span>()</span>
-<span id="cb3-18">  )</span></code></pre></div></div>
+<span id="cb3-18">  )</span></code></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 2
   switch_win_rate remain_win_rate
@@ -280,7 +342,7 @@ font-style: inherit;">n</span>()</span>
   <category>Rstats</category>
   <category>simulation</category>
   <guid>https://viswaduttp.github.io/posts/Monty_Hall/</guid>
-  <pubDate>Wed, 08 Jan 2025 00:00:00 GMT</pubDate>
+  <pubDate>Tue, 07 Jan 2025 18:30:00 GMT</pubDate>
   <media:content url="https://viswaduttp.github.io/posts/Monty_Hall/genai_monty.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
@@ -288,7 +350,6 @@ font-style: inherit;">n</span>()</span>
   <dc:creator>Viswadutt Poduri</dc:creator>
   <link>https://viswaduttp.github.io/posts/About/</link>
   <description><![CDATA[ 
-
 
 
 
@@ -312,7 +373,7 @@ font-style: inherit;">n</span>()</span>
  ]]></description>
   <category>tech</category>
   <guid>https://viswaduttp.github.io/posts/About/</guid>
-  <pubDate>Fri, 10 Mar 2023 00:00:00 GMT</pubDate>
+  <pubDate>Thu, 09 Mar 2023 18:30:00 GMT</pubDate>
   <media:content url="https://viswaduttp.github.io/posts/About/quarto_dallE.jpeg" medium="image" type="image/jpeg"/>
 </item>
 </channel>

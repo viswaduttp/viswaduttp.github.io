@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Viswadutt Poduri">
-<meta name="dcterms.date" content="2025-07-05">
+<meta name="dcterms.date" content="2025-09-19">
 
-<title>CSV to Parquet – Viswadutt Poduri</title>
+<title>Loan vs FD – Viswadutt Poduri</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,13 +73,17 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="CSV to Parquet – Viswadutt Poduri">
+<meta property="og:title" content="Loan vs FD – Viswadutt Poduri">
 <meta property="og:description" content="Welcome to Viswadutt’s Personal Page.">
-<meta property="og:image" content="https://viswaduttp.github.io/posts/useR_2025/slide.jpeg">
+<meta property="og:image" content="https://viswaduttp.github.io/posts/Loan_vs_FD/thumbnail.png">
 <meta property="og:site_name" content="Viswadutt Poduri">
-<meta name="twitter:title" content="CSV to Parquet – Viswadutt Poduri">
+<meta property="og:image:height" content="1024">
+<meta property="og:image:width" content="1536">
+<meta name="twitter:title" content="Loan vs FD – Viswadutt Poduri">
 <meta name="twitter:description" content="Welcome to Viswadutt’s Personal Page.">
-<meta name="twitter:image" content="https://viswaduttp.github.io/posts/useR_2025/slide.jpeg">
+<meta name="twitter:image" content="https://viswaduttp.github.io/posts/Loan_vs_FD/thumbnail.png">
+<meta name="twitter:image-height" content="1024">
+<meta name="twitter:image-width" content="1536">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -139,8 +143,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
-  <li><a href="#talk" id="toc-talk" class="nav-link" data-scroll-target="#talk">Talk</a></li>
+  <li><a href="#calcualation" id="toc-calcualation" class="nav-link active" data-scroll-target="#calcualation">Calcualation</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
 </nav>
@@ -153,11 +157,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">CSV to Parquet</h1>
+<h1 class="title">Loan vs FD</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Rstats</div>
-    <div class="quarto-category">talk</div>
-    <div class="quarto-category">useR</div>
+    <div class="quarto-category">Excel</div>
+    <div class="quarto-category">loan</div>
+    <div class="quarto-category">FD</div>
+    <div class="quarto-category">EMI</div>
   </div>
   </div>
 
@@ -175,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 5, 2025</p>
+      <p class="date">September 19, 2025</p>
     </div>
   </div>
   
@@ -187,30 +192,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Sharing slides of my talk, <em>CSV to Parquet: Managing Data for Multi-language Analytics Teams</em></p>
-<section id="slides" class="level2">
-<h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-<p><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQpGIN2Ol9lk7GC3lIUku96-KWPFs8qzF9pd7Qf45a0y5m2SVjLKLWo8vgfxi99BvSm2_jx7wm8RqB2/pubembed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"> </iframe></p>
+<p>Recently, I came across a video which says that if you have INR 10 lakh and want to buy a car, it is better to buy via loan than to pay the 10 lakh upfront. The proof was the screenshots of interest paid in the loan and interest received from FD. To put it in numbers, if you invest the 10lakh in a bank FD the interest amount you get at say 8% rate in say, 5 years is higher than the interest you need to pay on the loan say, at 9% rate. The ‘reason’ offered for this difference was - bank FD is compounded over 5 years vs the car loan which is on a reducing balance, so you will be better off taking a loan at a higher rate than the FD rate.</p>
+<p>I have got these numbers from Groww for easy representation</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fd.png" class="img-fluid figure-img"></p>
+<figcaption>from Growww</figcaption>
+</figure>
 </div>
-</section>
-<section id="talk" class="level2">
-<h2 class="anchored" data-anchor-id="talk">Talk</h2>
-<!-- <iframe width="560" height="315"  -->
-<!--         src="https://www.youtube.com/embed/TnFQOE3_H5A"  -->
-<!--         title="YouTube video player"  -->
-<!--         frameborder="0"  -->
-<!--         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  -->
-<!--         allowfullscreen> -->
-<!-- </iframe> -->
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-<p><iframe src="https://www.youtube.com/embed/TnFQOE3_H5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="position: absolute; top:0; left:0; width:100%; height:100%;"> </iframe></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="car_loan.png" class="img-fluid figure-img"></p>
+<figcaption>from Growww</figcaption>
+</figure>
 </div>
+<p>The statement above made by the influencer is clearly wrong and see if you could identify the fallacy.</p>
+<p>If the statement is true, then there is an arbitrage opportunity to make free money, take a 10lakh loan at 9% and invest in bank FD at 8% and make money at the end ?</p>
+<p>The interest rate in the (car) loan is for the time value of money plus the risk premium, sure the interest component of EMI reduces as you pay down your loan every month. But, is it correct to say you would be better off taking the loan at a higher rate (than what you would get in a FD) and investing the 10lakh in FD ? for a moment forget about tax on FD. The FD’s future value of INR 14.85 lakh after 5 years means that it is equal to today’s 10lakh at 8% annual discount rate <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. You can see that the FD amount is paid to the investor in full only after the term, not during the term. So, if we want to compare the loan, it is only fair that you compare the payments in the same terms.</p>
+<section id="calcualation" class="level2">
+<h2 class="anchored" data-anchor-id="calcualation">Calcualation</h2>
+<p>EMI for a 10 lakh loan at 9% annual interest rate for 5 years is 20.75k. Then there is a bank FD that pays 8% annual interest on the investment compounded monthly. Assume you can withdraw the EMI amount from the bank to meet the payment. If the bank FD is really beneficial at the end we will be left with money, but instead we will be short by 2EMIs.</p>
+<div>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT9QjON3cO3RIOmzosj209DVAmEfummr4A1325JDQfuW3F3Dk_SnVTbE41zL0mNhOjmlXd20s8j-7Ho/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="800" height="600">
+</iframe>
+</div>
+<p><a href="https://docs.google.com/spreadsheets/d/1-UjxOJfWO8AqpFmxnsesvJ6g-phv5xMcLffyQkxdSVw/" target="_blank"> Click here to open the Google Sheet </a></p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>I would think that the reason one should take a loan even though they have ready cash is related to optionality of cash and risk taking options. If you have 10 lakh cash in FD, you can sleep in peace knowing that you can get ready cash by breaking the FD in case of any emergency (reduced interest is only a small price to pay). Or you want to deploy the cash in an investment over a period of time.</p>
+<p>PS: I surely have spent more effort in refuting the bullshit inline with the Bullshit Asymmetry Principle</p>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>The compounding done by Groww is quarterly so the annual return is ~8.2%4<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

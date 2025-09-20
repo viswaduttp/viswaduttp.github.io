@@ -7,7 +7,9 @@ listing:
   categories: true
   sort-ui: true
   filter-ui: true
-  fields: [date, title, reading-time, description, categories]
+  fields: [date, title, reading-time, description, categories, image]
+  image-align: left
+  image-placeholder: images/listing_thumbnail.png
 page-layout: full
 title-block-banner: true
 ---

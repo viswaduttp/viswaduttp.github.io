@@ -21,6 +21,13 @@
     "text": "Footnotes\n\n\nFor a more detailed discussion visit Brilliant.↩︎"
   },
   {
+    "objectID": "posts/About/index.html",
+    "href": "posts/About/index.html",
+    "title": "About this page",
+    "section": "",
+    "text": "This page is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website on github pages are given below.\n\nAlbert Rapp\nQuarto on Github Pages\nBuilding with Quarto - Robert Mitchell\nQuarto Gallery\n\n\n\n\nGenerated using Dall-E"
+  },
+  {
     "objectID": "posts/Binomial_Standard_Error/index.html",
     "href": "posts/Binomial_Standard_Error/index.html",
     "title": "Standard Error in Binomial Distribution",
@@ -28,11 +35,32 @@
     "text": "A coin is tossed 1000 times and it landed heads 400 times. How confident we are whether the coin is fair ?\nWe can do a test of proportions, and our test statistic is (\\(\\bar{p}\\)-\\({P}\\))/\\(\\sqrt{PQ/n}\\)\nThe sample size (n) is 1000 and we have observed heads 400 times meaning \\(\\bar{p}\\) = 0.4 and \\(\\bar{q}\\) = 0.6.\nThe sample mean \\(\\bar{x}\\) is 400 (1000 x 0.4) (X is binomial)\nhere P = Q = 0.5 (population estimate)\nNow the denominator \\(\\sqrt{PQ/n}\\) is the standard error of the sample proportion \\(\\bar{p}\\)\nThis variance scaling is not really intuitive at the first look.\nThe variance is scaled by square of n, so the variance of sample proportion is \\({nPQ/n^2}\\) which is PQ/n and hence the standard error (same as standard deviation) is \\(\\sqrt{PQ/n}\\)\nWe could have solved the problem by testing number of heads instead of proportion of heads (400-500/15.81). 15.81 is just simply \\(\\sqrt{0.5*.0.5*1000}\\)"
   },
   {
-    "objectID": "posts/About/index.html",
-    "href": "posts/About/index.html",
-    "title": "About this page",
+    "objectID": "posts/Loan_vs_FD/index.html",
+    "href": "posts/Loan_vs_FD/index.html",
+    "title": "Loan vs FD",
     "section": "",
-    "text": "This page is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website on github pages are given below.\n\nAlbert Rapp\nQuarto on Github Pages\nBuilding with Quarto - Robert Mitchell\nQuarto Gallery\n\n\n\n\nGenerated using Dall-E"
+    "text": "Recently, I came across a video which says that if you have INR 10 lakh and want to buy a car, it is better to buy via loan than to pay the 10 lakh upfront. The proof was the screenshots of interest paid in the loan and interest received from FD. To put it in numbers, if you invest the 10lakh in a bank FD the interest amount you get at say 8% rate in say, 5 years is higher than the interest you need to pay on the loan say, at 9% rate. The ‘reason’ offered for this difference was - bank FD is compounded over 5 years vs the car loan which is on a reducing balance, so you will be better off taking a loan at a higher rate than the FD rate.\nI have got these numbers from Groww for easy representation\nThe statement above made by the influencer is clearly wrong and see if you could identify the fallacy.\nIf the statement is true, then there is an arbitrage opportunity to make free money, take a 10lakh loan at 9% and invest in bank FD at 8% and make money at the end ?\nThe interest rate in the (car) loan is for the time value of money plus the risk premium, sure the interest component of EMI reduces as you pay down your loan every month. But, is it correct to say you would be better off taking the loan at a higher rate (than what you would get in a FD) and investing the 10lakh in FD ? for a moment forget about tax on FD. The FD’s future value of INR 14.85 lakh after 5 years means that it is equal to today’s 10lakh at 8% annual discount rate 1. You can see that the FD amount is paid to the investor in full only after the term, not during the term. So, if we want to compare the loan, it is only fair that you compare the payments in the same terms."
+  },
+  {
+    "objectID": "posts/Loan_vs_FD/index.html#calcualation",
+    "href": "posts/Loan_vs_FD/index.html#calcualation",
+    "title": "Loan vs FD",
+    "section": "Calcualation",
+    "text": "Calcualation\nEMI for a 10 lakh loan at 9% annual interest rate for 5 years is 20.75k. Then there is a bank FD that pays 8% annual interest on the investment compounded monthly. Assume you can withdraw the EMI amount from the bank to meet the payment. If the bank FD is really beneficial at the end we will be left with money, but instead we will be short by 2EMIs.\n\n\n\n\n Click here to open the Google Sheet"
+  },
+  {
+    "objectID": "posts/Loan_vs_FD/index.html#conclusion",
+    "href": "posts/Loan_vs_FD/index.html#conclusion",
+    "title": "Loan vs FD",
+    "section": "Conclusion",
+    "text": "Conclusion\nI would think that the reason one should take a loan even though they have ready cash is related to optionality of cash and risk taking options. If you have 10 lakh cash in FD, you can sleep in peace knowing that you can get ready cash by breaking the FD in case of any emergency (reduced interest is only a small price to pay). Or you want to deploy the cash in an investment over a period of time.\nPS: I surely have spent more effort in refuting the bullshit inline with the Bullshit Asymmetry Principle"
+  },
+  {
+    "objectID": "posts/Loan_vs_FD/index.html#footnotes",
+    "href": "posts/Loan_vs_FD/index.html#footnotes",
+    "title": "Loan vs FD",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThe compounding done by Groww is quarterly so the annual return is ~8.2%4↩︎"
   },
   {
     "objectID": "posts/useR_2025/index.html",
@@ -60,6 +88,6 @@
     "href": "index.html",
     "title": "Viswadutt Poduri",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nCSV to Parquet\n\n\n\nRstats\n\ntalk\n\nuseR\n\n\n\n\n\n\n\n\n\nJul 5, 2025\n\n2 min\n\n\n\n\n\n\nStandard Error in Binomial Distribution\n\n\n\nRstats\n\ntheory\n\n\n\n\n\n\n\n\n\nJan 19, 2025\n\n1 min\n\n\n\n\n\n\nMonty Hall Problem\n\n\n\nRstats\n\nsimulation\n\n\n\n\n\n\n\n\n\nJan 8, 2025\n\n2 min\n\n\n\n\n\n\nAbout this page\n\n\n\ntech\n\n\n\n\n\n\n\n\n\nMar 10, 2023\n\n1 min\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nLoan vs FD\n\n\n\n\n\n\nExcel\n\n\nloan\n\n\nFD\n\n\nEMI\n\n\n\n\n\n\n\n\n\nSep 19, 2025\n\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\n\nCSV to Parquet\n\n\n\n\n\n\nRstats\n\n\ntalk\n\n\nuseR\n\n\n\n\n\n\n\n\n\nJul 5, 2025\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nStandard Error in Binomial Distribution\n\n\n\n\n\n\nRstats\n\n\ntheory\n\n\n\n\n\n\n\n\n\nJan 19, 2025\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nMonty Hall Problem\n\n\n\n\n\n\nRstats\n\n\nsimulation\n\n\n\n\n\n\n\n\n\nJan 8, 2025\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nAbout this page\n\n\n\n\n\n\ntech\n\n\n\n\n\n\n\n\n\nMar 10, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
   }
 ]

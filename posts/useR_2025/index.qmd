@@ -2,7 +2,7 @@
 title: "CSV to Parquet"
 date: "2025-07-05"
 categories: [Rstats, talk, useR]
-image: "slide.jpeg"
+image: slide.jpeg
 format: 
   html: default
 ---
@@ -44,3 +44,5 @@ Sharing slides of my talk, *CSV to Parquet: Managing Data for Multi-language Ana
   </iframe>
 
 </div>
+
+
