@@ -16,8 +16,34 @@
 <height>96</height>
 <width>144</width>
 </image>
-<generator>quarto-1.8.24</generator>
-<lastBuildDate>Fri, 19 Sep 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.37</generator>
+<lastBuildDate>Sat, 02 May 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Built a Shiny App with Posit AI</title>
+  <dc:creator>Viswadutt Poduri</dc:creator>
+  <link>https://viswaduttp.github.io/posts/Bult a Shiny App with Posit AI/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>I have been thinking of doing something with the SHRUG data by devdatalab from long time but couldn’t get time. Recent release of Posit AI assistant has been the nudge to do something with this data.</p>
+<p>I downloaded the surface PM 2.5 data and called up the AI assistant to create a shiny App. I took quite a few prompts and some crucial suggestions (do the h3 grids etc) to get the final app. The end result is pretty decent. <a href="https://connect.posit.cloud/viswaduttp/content/019de879-b41a-d1dd-1c9c-0d589df64c0e">Hosted it here using Posit Connect</a>. The github repo is <a href="https://github.com/viswaduttp/pm25_data_shrug">here</a></p>
+<p>The Posit AI is giving USD 5 of free usage in trial and I burned through it pretty fast on making this app and I would like to polish it further. Not sure, how much good the $20 per month would be for multiple projects.</p>
+
+
+
+ ]]></description>
+  <category>Tech</category>
+  <category>Shiny</category>
+  <category>AI</category>
+  <category>Posit</category>
+  <category>Rstats</category>
+  <guid>https://viswaduttp.github.io/posts/Bult a Shiny App with Posit AI/</guid>
+  <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://viswaduttp.github.io/posts/Bult a Shiny App with Posit AI/thumbnail.png" medium="image" type="image/png" height="71" width="144"/>
+</item>
 <item>
   <title>Loan vs FD</title>
   <dc:creator>Viswadutt Poduri</dc:creator>
@@ -70,7 +96,7 @@
 </ol>
 </section></div> ]]></description>
   <category>Excel</category>
-  <category>loan</category>
+  <category>Loan</category>
   <category>FD</category>
   <category>EMI</category>
   <guid>https://viswaduttp.github.io/posts/Loan_vs_FD/</guid>
@@ -87,7 +113,8 @@
 
 
 
-<p>Sharing slides of my talk, <em>CSV to Parquet: Managing Data for Multi-language Analytics Teams</em></p>
+<p>Update: My useR! 2025 talk was highlighted by the organizing team as one of the most watched talks. <a href="https://www.linkedin.com/posts/viswadutt_r-user-user2026-share-7447349795918131200-l8sF?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABKn7o8BAJav0_25gysF6-9IIA2ycdZEwF0">Delighted that the talk resonated with wider audiences</a></p>
+<p>Sharing slides of my useR!2025 talk, <em>CSV to Parquet: Managing Data for Multi-language Analytics Teams</em></p>
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -137,15 +164,21 @@
 <p>This variance scaling is not really intuitive at the first look.</p>
 <p>The variance is scaled by square of n, so the variance of sample proportion is <img src="https://latex.codecogs.com/png.latex?%7BnPQ/n%5E2%7D"> which is PQ/n and hence the standard error (same as standard deviation) is <img src="https://latex.codecogs.com/png.latex?%5Csqrt%7BPQ/n%7D"></p>
 <p>We could have solved the problem by testing number of heads instead of proportion of heads (400-500/15.81). 15.81 is just simply <img src="https://latex.codecogs.com/png.latex?%5Csqrt%7B0.5*.0.5*1000%7D"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://viswaduttp.github.io/posts/Binomial_Standard_Error/gemini_gen_image.png" class="img-fluid figure-img"></p>
+<figcaption>Generated using Gemini</figcaption>
+</figure>
+</div>
 
 
 
  ]]></description>
   <category>Rstats</category>
-  <category>theory</category>
+  <category>Probability</category>
   <guid>https://viswaduttp.github.io/posts/Binomial_Standard_Error/</guid>
   <pubDate>Sun, 19 Jan 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://viswaduttp.github.io/images/listing_thumbnail.png" medium="image" type="image/png" height="96" width="144"/>
+  <media:content url="https://viswaduttp.github.io/posts/Binomial_Standard_Error/gemini_gen_image.png" medium="image" type="image/png" height="79" width="144"/>
 </item>
 <item>
   <title>Monty Hall Problem</title>
@@ -344,7 +377,7 @@ font-style: inherit;">n</span>()</span>
 </ol>
 </section></div> ]]></description>
   <category>Rstats</category>
-  <category>simulation</category>
+  <category>Simulation</category>
   <guid>https://viswaduttp.github.io/posts/Monty_Hall/</guid>
   <pubDate>Wed, 08 Jan 2025 00:00:00 GMT</pubDate>
   <media:content url="https://viswaduttp.github.io/posts/Monty_Hall/genai_monty.png" medium="image" type="image/png" height="96" width="144"/>
@@ -376,10 +409,41 @@ font-style: inherit;">n</span>()</span>
 
 
  ]]></description>
-  <category>tech</category>
+  <category>Tech</category>
   <guid>https://viswaduttp.github.io/posts/About/</guid>
   <pubDate>Fri, 10 Mar 2023 00:00:00 GMT</pubDate>
   <media:content url="https://viswaduttp.github.io/posts/About/quarto_dallE.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Blog</title>
+  <dc:creator>Viswadutt Poduri</dc:creator>
+  <link>https://viswaduttp.github.io/posts/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="blog" class="level1">
+<h1>Blog</h1>
+<p>Stay current with the latest analytics, modeling, and reproducible workflow posts.</p>
+<section id="featured-posts" class="level2">
+<h2 class="anchored" data-anchor-id="featured-posts">Featured posts</h2>
+<ul>
+<li><p><a href="Loan_vs_FD/">Loan vs FD</a> A practical breakdown of loan vs fixed deposit comparisons and why risk matters.</p></li>
+<li><p><a href="Monty_Hall/">Monty Hall Problem</a> A simulation-backed explanation of why switching doors improves your odds.</p></li>
+<li><p><a href="Binomial_Standard_Error/">Binomial Standard Error</a> A concise guide to interpreting uncertainty in probability estimates.</p></li>
+<li><p><a href="useR_2025/">useR 2025</a> Notes and takeaways from the useR 2025 conference.</p></li>
+</ul>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <guid>https://viswaduttp.github.io/posts/</guid>
+  <pubDate>Sat, 09 May 2026 19:03:51 GMT</pubDate>
+  <media:content url="https://viswaduttp.github.io/images/listing_thumbnail.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 </channel>
 </rss>
