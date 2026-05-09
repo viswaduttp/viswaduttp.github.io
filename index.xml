@@ -414,36 +414,5 @@ font-style: inherit;">n</span>()</span>
   <pubDate>Fri, 10 Mar 2023 00:00:00 GMT</pubDate>
   <media:content url="https://viswaduttp.github.io/posts/About/quarto_dallE.jpeg" medium="image" type="image/jpeg"/>
 </item>
-<item>
-  <title>Blog</title>
-  <dc:creator>Viswadutt Poduri</dc:creator>
-  <link>https://viswaduttp.github.io/posts/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="blog" class="level1">
-<h1>Blog</h1>
-<p>Stay current with the latest analytics, modeling, and reproducible workflow posts.</p>
-<section id="featured-posts" class="level2">
-<h2 class="anchored" data-anchor-id="featured-posts">Featured posts</h2>
-<ul>
-<li><p><a href="Loan_vs_FD/">Loan vs FD</a> A practical breakdown of loan vs fixed deposit comparisons and why risk matters.</p></li>
-<li><p><a href="Monty_Hall/">Monty Hall Problem</a> A simulation-backed explanation of why switching doors improves your odds.</p></li>
-<li><p><a href="Binomial_Standard_Error/">Binomial Standard Error</a> A concise guide to interpreting uncertainty in probability estimates.</p></li>
-<li><p><a href="useR_2025/">useR 2025</a> Notes and takeaways from the useR 2025 conference.</p></li>
-</ul>
-
-
-</section>
-</section>
-
- ]]></description>
-  <guid>https://viswaduttp.github.io/posts/</guid>
-  <pubDate>Sat, 09 May 2026 19:03:51 GMT</pubDate>
-  <media:content url="https://viswaduttp.github.io/images/listing_thumbnail.png" medium="image" type="image/png" height="96" width="144"/>
-</item>
 </channel>
 </rss>
