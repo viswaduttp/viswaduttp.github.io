@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://viswaduttp.github.io/About.html</loc>
-    <lastmod>2025-01-08T17:35:26.140Z</lastmod>
+    <lastmod>2025-09-13T11:34:54.469Z</lastmod>
   </url>
   <url>
     <loc>https://viswaduttp.github.io/posts/Monty_Hall/index.html</loc>
-    <lastmod>2025-09-17T04:05:53.820Z</lastmod>
-  </url>
-  <url>
-    <loc>https://viswaduttp.github.io/posts/About/index.html</loc>
-    <lastmod>2025-09-17T04:05:53.810Z</lastmod>
-  </url>
-  <url>
-    <loc>https://viswaduttp.github.io/posts/Binomial_Standard_Error/index.html</loc>
-    <lastmod>2025-02-28T18:20:56.894Z</lastmod>
-  </url>
-  <url>
-    <loc>https://viswaduttp.github.io/posts/Loan_vs_FD/index.html</loc>
-    <lastmod>2025-09-20T18:58:25.292Z</lastmod>
+    <lastmod>2026-05-02T11:18:50.341Z</lastmod>
   </url>
   <url>
     <loc>https://viswaduttp.github.io/posts/useR_2025/index.html</loc>
-    <lastmod>2025-09-17T04:14:54.994Z</lastmod>
+    <lastmod>2026-05-09T11:29:44.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://viswaduttp.github.io/posts/Loan_vs_FD/index.html</loc>
+    <lastmod>2026-05-02T11:18:50.322Z</lastmod>
+  </url>
+  <url>
+    <loc>https://viswaduttp.github.io/posts/Binomial_Standard_Error/index.html</loc>
+    <lastmod>2026-05-09T11:34:03.997Z</lastmod>
+  </url>
+  <url>
+    <loc>https://viswaduttp.github.io/posts/About/index.html</loc>
+    <lastmod>2026-05-02T11:18:50.321Z</lastmod>
+  </url>
+  <url>
+    <loc>https://viswaduttp.github.io/posts/index.html</loc>
+    <lastmod>2026-05-08T11:47:48.546Z</lastmod>
   </url>
   <url>
     <loc>https://viswaduttp.github.io/index.html</loc>
-    <lastmod>2025-09-17T04:41:08.298Z</lastmod>
+    <lastmod>2026-05-08T11:49:48.188Z</lastmod>
   </url>
 </urlset>

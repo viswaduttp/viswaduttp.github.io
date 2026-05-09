@@ -7,7 +7,10 @@ format:
   html: default
 ---
 
-Sharing slides of my talk, *CSV to Parquet: Managing Data for Multi-language Analytics Teams*
+Update: My useR! 2025 talk was highlighted by the organizing team as one of the most watched talks. [Delighted that the talk resonated with wider audiences](https://www.linkedin.com/posts/viswadutt_r-user-user2026-share-7447349795918131200-l8sF?utm_source=share&utm_medium=member_desktop&rcm=ACoAABKn7o8BAJav0_25gysF6-9IIA2ycdZEwF0)
+
+
+Sharing slides of my useR!2025 talk, *CSV to Parquet: Managing Data for Multi-language Analytics Teams*
 
 ## Slides
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">

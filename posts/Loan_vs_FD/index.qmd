@@ -1,7 +1,7 @@
 ---
 title: "Loan vs FD"
 date: "2025-09-19"
-categories: [Excel, loan, FD, EMI]
+categories: [Excel, Loan, FD, EMI]
 image: thumbnail.png
 format: 
   html: default
