@@ -21,25 +21,25 @@
     "text": "Footnotes\n\n\nFor a more detailed discussion visit Brilliant.↩︎"
   },
   {
-    "objectID": "posts/useR_2025/index.html",
-    "href": "posts/useR_2025/index.html",
-    "title": "CSV to Parquet",
+    "objectID": "posts/About/index.html",
+    "href": "posts/About/index.html",
+    "title": "About this page",
     "section": "",
-    "text": "Update: My useR! 2025 talk was highlighted by the organizing team as one of the most watched talks. [Delighted that the talk resonated with wider audiences] (https://www.linkedin.com/posts/viswadutt_r-user-user2026-share-7447349795918131200-l8sF?utm_source=share&utm_medium=member_desktop&rcm=ACoAABKn7o8BAJav0_25gysF6-9IIA2ycdZEwF0)\nSharing slides of my useR!2025 talk, CSV to Parquet: Managing Data for Multi-language Analytics Teams"
+    "text": "This page is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website on github pages are given below.\n\nAlbert Rapp\nQuarto on Github Pages\nBuilding with Quarto - Robert Mitchell\nQuarto Gallery\n\n\n\n\nGenerated using Dall-E"
   },
   {
-    "objectID": "posts/useR_2025/index.html#slides",
-    "href": "posts/useR_2025/index.html#slides",
-    "title": "CSV to Parquet",
-    "section": "Slides",
-    "text": "Slides"
+    "objectID": "posts/Bult a Shiny App with Posit AI/index.html",
+    "href": "posts/Bult a Shiny App with Posit AI/index.html",
+    "title": "Built a Shiny App with Posit AI",
+    "section": "",
+    "text": "I have been thinking of doing something with the SHRUG data by devdatalab from long time but couldn’t get time. Recent release of Posit AI assistant has been the nudge to do something with this data.\nI downloaded the surface PM 2.5 data and called up the AI assistant to create a shiny App. I took quite a few prompts and some crucial suggestions (do the h3 grids etc) to get the final app. The end result is pretty decent. Hosted it here using Posit Connect. The github repo is here\nThe Posit AI is giving USD 5 of free usage in trial and I burned through it pretty fast on making this app and I would like to polish it further. Not sure, how much good the $20 per month would be for multiple projects."
   },
   {
-    "objectID": "posts/useR_2025/index.html#talk",
-    "href": "posts/useR_2025/index.html#talk",
-    "title": "CSV to Parquet",
-    "section": "Talk",
-    "text": "Talk"
+    "objectID": "posts/Binomial_Standard_Error/index.html",
+    "href": "posts/Binomial_Standard_Error/index.html",
+    "title": "Standard Error in Binomial Distribution",
+    "section": "",
+    "text": "A coin is tossed 1000 times and it landed heads 400 times. How confident we are whether the coin is fair ?\nWe can do a test of proportions, and our test statistic is (\\(\\bar{p}\\)-\\({P}\\))/\\(\\sqrt{PQ/n}\\)\nThe sample size (n) is 1000 and we have observed heads 400 times meaning \\(\\bar{p}\\) = 0.4 and \\(\\bar{q}\\) = 0.6.\nThe sample mean \\(\\bar{x}\\) is 400 (1000 x 0.4) (X is binomial)\nhere P = Q = 0.5 (population estimate)\nNow the denominator \\(\\sqrt{PQ/n}\\) is the standard error of the sample proportion \\(\\bar{p}\\)\nThis variance scaling is not really intuitive at the first look.\nThe variance is scaled by square of n, so the variance of sample proportion is \\({nPQ/n^2}\\) which is PQ/n and hence the standard error (same as standard deviation) is \\(\\sqrt{PQ/n}\\)\nWe could have solved the problem by testing number of heads instead of proportion of heads (400-500/15.81). 15.81 is just simply \\(\\sqrt{0.5*.0.5*1000}\\)\n\n\n\nGenerated using Gemini"
   },
   {
     "objectID": "posts/Loan_vs_FD/index.html",
@@ -70,38 +70,31 @@
     "text": "Footnotes\n\n\nThe compounding done by Groww is quarterly so the annual return is ~8.2%4↩︎"
   },
   {
-    "objectID": "posts/Binomial_Standard_Error/index.html",
-    "href": "posts/Binomial_Standard_Error/index.html",
-    "title": "Standard Error in Binomial Distribution",
+    "objectID": "posts/useR_2025/index.html",
+    "href": "posts/useR_2025/index.html",
+    "title": "CSV to Parquet",
     "section": "",
-    "text": "A coin is tossed 1000 times and it landed heads 400 times. How confident we are whether the coin is fair ?\nWe can do a test of proportions, and our test statistic is (\\(\\bar{p}\\)-\\({P}\\))/\\(\\sqrt{PQ/n}\\)\nThe sample size (n) is 1000 and we have observed heads 400 times meaning \\(\\bar{p}\\) = 0.4 and \\(\\bar{q}\\) = 0.6.\nThe sample mean \\(\\bar{x}\\) is 400 (1000 x 0.4) (X is binomial)\nhere P = Q = 0.5 (population estimate)\nNow the denominator \\(\\sqrt{PQ/n}\\) is the standard error of the sample proportion \\(\\bar{p}\\)\nThis variance scaling is not really intuitive at the first look.\nThe variance is scaled by square of n, so the variance of sample proportion is \\({nPQ/n^2}\\) which is PQ/n and hence the standard error (same as standard deviation) is \\(\\sqrt{PQ/n}\\)\nWe could have solved the problem by testing number of heads instead of proportion of heads (400-500/15.81). 15.81 is just simply \\(\\sqrt{0.5*.0.5*1000}\\)"
+    "text": "Update: My useR! 2025 talk was highlighted by the organizing team as one of the most watched talks. Delighted that the talk resonated with wider audiences\nSharing slides of my useR!2025 talk, CSV to Parquet: Managing Data for Multi-language Analytics Teams"
   },
   {
-    "objectID": "posts/About/index.html",
-    "href": "posts/About/index.html",
-    "title": "About this page",
-    "section": "",
-    "text": "This page is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website on github pages are given below.\n\nAlbert Rapp\nQuarto on Github Pages\nBuilding with Quarto - Robert Mitchell\nQuarto Gallery\n\n\n\n\nGenerated using Dall-E"
+    "objectID": "posts/useR_2025/index.html#slides",
+    "href": "posts/useR_2025/index.html#slides",
+    "title": "CSV to Parquet",
+    "section": "Slides",
+    "text": "Slides"
   },
   {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Stay current with the latest analytics, modeling, and reproducible workflow posts.\n\n\n\nLoan vs FD A practical breakdown of loan vs fixed deposit comparisons and why risk matters.\nMonty Hall Problem A simulation-backed explanation of why switching doors improves your odds.\nBinomial Standard Error A concise guide to interpreting uncertainty in probability estimates.\nuseR 2025 Notes and takeaways from the useR 2025 conference."
-  },
-  {
-    "objectID": "posts/index.html#featured-posts",
-    "href": "posts/index.html#featured-posts",
-    "title": "Blog",
-    "section": "",
-    "text": "Loan vs FD A practical breakdown of loan vs fixed deposit comparisons and why risk matters.\nMonty Hall Problem A simulation-backed explanation of why switching doors improves your odds.\nBinomial Standard Error A concise guide to interpreting uncertainty in probability estimates.\nuseR 2025 Notes and takeaways from the useR 2025 conference."
+    "objectID": "posts/useR_2025/index.html#talk",
+    "href": "posts/useR_2025/index.html#talk",
+    "title": "CSV to Parquet",
+    "section": "Talk",
+    "text": "Talk"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Viswadutt Poduri",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nBlog\n\n\nLatest analytics and R writing from Viswadutt Poduri.\n\n\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nLoan vs FD\n\n\n\nExcel\n\nloan\n\nFD\n\nEMI\n\n\n\n\n\n\n\n\n\nSep 19, 2025\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\nCSV to Parquet\n\n\n\nRstats\n\ntalk\n\nuseR\n\n\n\n\n\n\n\n\n\nJul 5, 2025\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nStandard Error in Binomial Distribution\n\n\n\nRstats\n\ntheory\n\n\n\n\n\n\n\n\n\nJan 19, 2025\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nMonty Hall Problem\n\n\n\nRstats\n\nsimulation\n\n\n\n\n\n\n\n\n\nJan 8, 2025\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nAbout this page\n\n\n\ntech\n\n\n\n\n\n\n\n\n\nMar 10, 2023\n\n1 min\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nBuilt a Shiny App with Posit AI\n\n\n\nTech\n\nShiny\n\nAI\n\nPosit\n\nRstats\n\n\n\n\n\n\n\n\n\nMay 2, 2026\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nLoan vs FD\n\n\n\nExcel\n\nLoan\n\nFD\n\nEMI\n\n\n\n\n\n\n\n\n\nSep 19, 2025\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\nCSV to Parquet\n\n\n\nRstats\n\ntalk\n\nuseR\n\n\n\n\n\n\n\n\n\nJul 5, 2025\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nStandard Error in Binomial Distribution\n\n\n\nRstats\n\nProbability\n\n\n\n\n\n\n\n\n\nJan 19, 2025\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nMonty Hall Problem\n\n\n\nRstats\n\nSimulation\n\n\n\n\n\n\n\n\n\nJan 8, 2025\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nAbout this page\n\n\n\nTech\n\n\n\n\n\n\n\n\n\nMar 10, 2023\n\n1 min\n\n\n\n\nNo matching items"
   }
 ]

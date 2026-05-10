@@ -7,7 +7,7 @@ image: thumbnail.png
 
 I have been thinking of doing something with the SHRUG data by devdatalab from long time but couldn't get time. Recent release of Posit AI assistant has been the nudge to do something with this data. 
 
-I downloaded the surface PM 2.5 data and called up the AI assistant to create a shiny App. I took quite a few prompts and some crucial suggestions (do the h3 grids etc) to get the final app. The end result is pretty decent. [Hosted it here using Posit Connect](https://connect.posit.cloud/viswaduttp/content/019de879-b41a-d1dd-1c9c-0d589df64c0e). The github repo is [here](https://github.com/viswaduttp/pm25_data_shrug)
+I downloaded the surface PM 2.5 data and called up the AI assistant to create a shiny App. I took quite a few prompts and some crucial suggestions (do the h3 grids etc) to get the final app. The end result is pretty decent. [Hosted it here using Posit Connect](https://019de879-b41a-d1dd-1c9c-0d589df64c0e.share.connect.posit.cloud/). The github repo is [here](https://github.com/viswaduttp/pm25_data_shrug)
 
 The Posit AI is giving USD 5 of free usage in trial and I burned through it pretty fast on making this app and I would like to polish it further. Not sure, how much good the $20 per month would be for multiple projects.
 
