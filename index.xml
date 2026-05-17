@@ -21,7 +21,7 @@
 <item>
   <title>Built a Shiny App with Posit AI</title>
   <dc:creator>Viswadutt Poduri</dc:creator>
-  <link>https://viswaduttp.github.io/posts/Bult a Shiny App with Posit AI/</link>
+  <link>https://viswaduttp.github.io/posts/built-shiny-app-posit-ai/</link>
   <description><![CDATA[ 
 
 
@@ -40,9 +40,9 @@
   <category>AI</category>
   <category>Posit</category>
   <category>Rstats</category>
-  <guid>https://viswaduttp.github.io/posts/Bult a Shiny App with Posit AI/</guid>
+  <guid>https://viswaduttp.github.io/posts/built-shiny-app-posit-ai/</guid>
   <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://viswaduttp.github.io/posts/Bult a Shiny App with Posit AI/thumbnail.png" medium="image" type="image/png" height="71" width="144"/>
+  <media:content url="https://viswaduttp.github.io/posts/built-shiny-app-posit-ai/thumbnail.png" medium="image" type="image/png" height="71" width="144"/>
 </item>
 <item>
   <title>Loan vs FD</title>
@@ -74,11 +74,10 @@
 <section id="calculation" class="level2">
 <h2 class="anchored" data-anchor-id="calculation">Calculation</h2>
 <p>EMI for a 10 lakh loan at 9% annual interest rate for 5 years is 20.75k. Then there is a bank FD that pays 8% annual interest on the investment compounded monthly. Assume you can withdraw the EMI amount from the bank to meet the payment. If the bank FD is really beneficial at the end we will be left with money, but instead we will be short by 2EMIs.</p>
-<div>
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT9QjON3cO3RIOmzosj209DVAmEfummr4A1325JDQfuW3F3Dk_SnVTbE41zL0mNhOjmlXd20s8j-7Ho/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="800" height="600">
-</iframe>
-</div>
 <p><a href="https://docs.google.com/spreadsheets/d/1-UjxOJfWO8AqpFmxnsesvJ6g-phv5xMcLffyQkxdSVw/" target="_blank"> Click here to open the Google Sheet </a></p>
+<div class="spreadsheet-embed js-embed" data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT9QjON3cO3RIOmzosj209DVAmEfummr4A1325JDQfuW3F3Dk_SnVTbE41zL0mNhOjmlXd20s8j-7Ho/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" data-title="Loan vs FD calculation sheet">
+
+</div>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
@@ -118,15 +117,15 @@
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
 <p><a href="https://docs.google.com/presentation/d/e/2PACX-1vQpGIN2Ol9lk7GC3lIUku96-KWPFs8qzF9pd7Qf45a0y5m2SVjLKLWo8vgfxi99BvSm2_jx7wm8RqB2/pub?start=false&amp;loop=false&amp;delayms=3000">Open the slides</a></p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-<p><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQpGIN2Ol9lk7GC3lIUku96-KWPFs8qzF9pd7Qf45a0y5m2SVjLKLWo8vgfxi99BvSm2_jx7wm8RqB2/pubembed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"> </iframe></p>
+<div class="responsive-embed js-embed" data-src="https://docs.google.com/presentation/d/e/2PACX-1vQpGIN2Ol9lk7GC3lIUku96-KWPFs8qzF9pd7Qf45a0y5m2SVjLKLWo8vgfxi99BvSm2_jx7wm8RqB2/pubembed?start=false&amp;loop=false&amp;delayms=3000" data-title="CSV to Parquet slides">
+
 </div>
 </section>
 <section id="talk" class="level2">
 <h2 class="anchored" data-anchor-id="talk">Talk</h2>
 <p><a href="https://www.youtube.com/watch?v=TnFQOE3_H5A">Watch the talk on YouTube</a></p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-<p><iframe src="https://www.youtube.com/embed/TnFQOE3_H5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="position: absolute; top:0; left:0; width:100%; height:100%;"> </iframe></p>
+<div class="responsive-embed js-embed" data-src="https://www.youtube.com/embed/TnFQOE3_H5A" data-title="CSV to Parquet talk">
+
 </div>
 
 

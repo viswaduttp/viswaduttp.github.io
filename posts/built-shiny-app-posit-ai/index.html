@@ -81,13 +81,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Built a Shiny App with Posit AI – Viswadutt Poduri">
 <meta property="og:description" content="Welcome to Viswadutt’s Personal Page.">
-<meta property="og:image" content="https://viswaduttp.github.io/posts/Bult a Shiny App with Posit AI/thumbnail.png">
+<meta property="og:image" content="https://viswaduttp.github.io/posts/built-shiny-app-posit-ai/thumbnail.png">
 <meta property="og:site_name" content="Viswadutt Poduri">
 <meta property="og:image:height" content="1260">
 <meta property="og:image:width" content="2560">
 <meta name="twitter:title" content="Built a Shiny App with Posit AI – Viswadutt Poduri">
 <meta name="twitter:description" content="Welcome to Viswadutt’s Personal Page.">
-<meta name="twitter:image" content="https://viswaduttp.github.io/posts/Bult a Shiny App with Posit AI/thumbnail.png">
+<meta name="twitter:image" content="https://viswaduttp.github.io/posts/built-shiny-app-posit-ai/thumbnail.png">
 <meta name="twitter:image-height" content="1260">
 <meta name="twitter:image-width" content="2560">
 <meta name="twitter:card" content="summary_large_image">
@@ -367,6 +367,19 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".js-embed[data-src]").forEach((container) => {
+    const iframe = document.createElement("iframe");
+    iframe.src = container.dataset.src;
+    iframe.title = container.dataset.title || "Embedded content";
+    iframe.loading = "lazy";
+    iframe.allowFullscreen = true;
+    iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    container.appendChild(iframe);
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
