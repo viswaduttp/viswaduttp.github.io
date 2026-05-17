@@ -16,32 +16,10 @@ Sharing slides of my useR!2025 talk, *CSV to Parquet: Managing Data for Multi-la
 
 [Open the slides](https://docs.google.com/presentation/d/e/2PACX-1vQpGIN2Ol9lk7GC3lIUku96-KWPFs8qzF9pd7Qf45a0y5m2SVjLKLWo8vgfxi99BvSm2_jx7wm8RqB2/pub?start=false&loop=false&delayms=3000)
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQpGIN2Ol9lk7GC3lIUku96-KWPFs8qzF9pd7Qf45a0y5m2SVjLKLWo8vgfxi99BvSm2_jx7wm8RqB2/pubembed?start=false&loop=false&delayms=3000"
-          frameborder="0"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-          allowfullscreen="true"
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true">
-  </iframe>
-</div>
-
-
+<div class="responsive-embed js-embed" data-src="https://docs.google.com/presentation/d/e/2PACX-1vQpGIN2Ol9lk7GC3lIUku96-KWPFs8qzF9pd7Qf45a0y5m2SVjLKLWo8vgfxi99BvSm2_jx7wm8RqB2/pubembed?start=false&loop=false&delayms=3000" data-title="CSV to Parquet slides"></div>
 
 ## Talk
 
 [Watch the talk on YouTube](https://www.youtube.com/watch?v=TnFQOE3_H5A)
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-
-  <iframe 
-    src="https://www.youtube.com/embed/TnFQOE3_H5A" 
-    title="YouTube video player"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen
-    style="position: absolute; top:0; left:0; width:100%; height:100%;">
-  </iframe>
-
-</div>
-
+<div class="responsive-embed js-embed" data-src="https://www.youtube.com/embed/TnFQOE3_H5A" data-title="CSV to Parquet talk"></div>

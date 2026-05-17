@@ -38,6 +38,7 @@ format:
      light: flatly
      dark: darkly
     css: styles.css
+    include-after-body: includes/embed-media.html
     toc: true
     toc-title: Contents
     toc-location: left

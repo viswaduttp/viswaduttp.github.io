@@ -369,6 +369,19 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".js-embed[data-src]").forEach((container) => {
+    const iframe = document.createElement("iframe");
+    iframe.src = container.dataset.src;
+    iframe.title = container.dataset.title || "Embedded content";
+    iframe.loading = "lazy";
+    iframe.allowFullscreen = true;
+    iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    container.appendChild(iframe);
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

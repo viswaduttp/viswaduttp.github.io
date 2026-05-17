@@ -1,0 +1,13 @@
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".js-embed[data-src]").forEach((container) => {
+    const iframe = document.createElement("iframe");
+    iframe.src = container.dataset.src;
+    iframe.title = container.dataset.title || "Embedded content";
+    iframe.loading = "lazy";
+    iframe.allowFullscreen = true;
+    iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    container.appendChild(iframe);
+  });
+});
+</script>

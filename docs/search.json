@@ -7,67 +7,11 @@
     "text": "Hi, I’m Viswadutt, an accomplished professional with a decade of experience spanning public and private sectors from strategy to finance to research. I’ve worked with both the central and state governments in various capacities - from navigating geostationary satellites to analyzing industrial policy interventions to program managing a team of investment professionals.\nIn the private sector, I’ve worked with the Treasury team of Reliance Industries Limited in economic research and financial planning. Today, I’m part of the analytics division of India’s largest integrated logistics player, where I bring my multidisciplinary expertise to build data-driven solutions.\nMy varied experiences have given me a unique perspective on the intersection of business, technology, and public policy."
   },
   {
-    "objectID": "posts/Monty_Hall/index.html",
-    "href": "posts/Monty_Hall/index.html",
-    "title": "Monty Hall Problem",
-    "section": "",
-    "text": "There are 3 doors (A,B,C) and only 1 door has a car behind it and the other two doors have goats behind them. Say, you have selected door A - now, the game show host opens B and shows it to be a goat. Now, you have an option to switch the door from A to C. should you switch ?\nThis seemingly simple problem statement has tortured novices and pros alike. To answer this question, we need to know how the odds change for winning if we switch vs if we don’t. When we don’t switch the probability of winning would remain at 1/3. When we switch there is 1/3 chance of selecting a car and losing and 2/3 chance of choosing a goat and winning (due to switch), so switching nearly doubles our chances.Thank you for the extra 33.3%. 1\nI have simulated this scenario below in R\nlibrary(dplyr)\nset.seed(1)\n\n  doors = c('A', 'B', 'C')\n  car_door = sample(doors, size = 10000, replace = T)\n  choosen_door = sample(doors, size = 10000, replace = T)\nset.seed(1)\n\ntibble(\n       car = car_door,\n       choosen = choosen_door) |&gt;\n  rowwise() |&gt;\n  mutate(door_revealed = sample(setdiff(doors, c(car, choosen)), 1)\n         ) |&gt;\n  mutate(switch = setdiff(doors, c(choosen, door_revealed))) |&gt;\n  ungroup()|&gt;\n  mutate(remain = choosen) %&gt;% \n  mutate(switch_win = ifelse(car == switch, 1, 0),\n         remain_win = ifelse(car == remain, 1, 0)\n         ) |&gt;\n  summarize(\n    switch_win_rate = sum(switch_win)/n(),\n    remain_win_rate = sum(remain_win)/n()\n  )\n\n# A tibble: 1 × 2\n  switch_win_rate remain_win_rate\n            &lt;dbl&gt;           &lt;dbl&gt;\n1           0.665           0.335"
-  },
-  {
-    "objectID": "posts/Monty_Hall/index.html#footnotes",
-    "href": "posts/Monty_Hall/index.html#footnotes",
-    "title": "Monty Hall Problem",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nFor a more detailed discussion visit Brilliant.↩︎"
-  },
-  {
-    "objectID": "posts/About/index.html",
-    "href": "posts/About/index.html",
-    "title": "About this page",
-    "section": "",
-    "text": "This page is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website on github pages are given below.\n\nAlbert Rapp\nQuarto on Github Pages\nBuilding with Quarto - Robert Mitchell\nQuarto Gallery\n\n\n\n\nGenerated using Dall-E"
-  },
-  {
-    "objectID": "posts/Bult a Shiny App with Posit AI/index.html",
-    "href": "posts/Bult a Shiny App with Posit AI/index.html",
+    "objectID": "posts/built-shiny-app-posit-ai/index.html",
+    "href": "posts/built-shiny-app-posit-ai/index.html",
     "title": "Built a Shiny App with Posit AI",
     "section": "",
     "text": "I have been thinking of doing something with the SHRUG data by devdatalab from long time but couldn’t get time. Recent release of Posit AI assistant has been the nudge to do something with this data.\nI downloaded the surface PM 2.5 data and called up the AI assistant to create a shiny App. I took quite a few prompts and some crucial suggestions (do the h3 grids etc) to get the final app. The end result is pretty decent. Hosted it here using Posit Connect. The github repo is here\nThe Posit AI is giving USD 5 of free usage in trial and I burned through it pretty fast on making this app and I would like to polish it further. Not sure, how much good the $20 per month would be for multiple projects."
-  },
-  {
-    "objectID": "posts/Binomial_Standard_Error/index.html",
-    "href": "posts/Binomial_Standard_Error/index.html",
-    "title": "Standard Error in Binomial Distribution",
-    "section": "",
-    "text": "A coin is tossed 1000 times and it landed heads 400 times. How confident we are whether the coin is fair ?\nWe can do a test of proportions, and our test statistic is (\\(\\bar{p}\\)-\\({P}\\))/\\(\\sqrt{PQ/n}\\)\nThe sample size (n) is 1000 and we have observed heads 400 times meaning \\(\\bar{p}\\) = 0.4 and \\(\\bar{q}\\) = 0.6.\nThe sample mean \\(\\bar{x}\\) is 400 (1000 x 0.4) (X is binomial)\nhere P = Q = 0.5 (population estimate)\nNow the denominator \\(\\sqrt{PQ/n}\\) is the standard error of the sample proportion \\(\\bar{p}\\)\nThis variance scaling is not really intuitive at the first look.\nThe variance is scaled by square of n, so the variance of sample proportion is \\({nPQ/n^2}\\) which is PQ/n and hence the standard error (same as standard deviation) is \\(\\sqrt{PQ/n}\\)\nWe could have solved the problem by testing number of heads instead of proportion of heads (400-500/15.81). 15.81 is just simply \\(\\sqrt{0.5*.0.5*1000}\\)\n\n\n\nGenerated using Gemini"
-  },
-  {
-    "objectID": "posts/Loan_vs_FD/index.html",
-    "href": "posts/Loan_vs_FD/index.html",
-    "title": "Loan vs FD",
-    "section": "",
-    "text": "Recently, I came across a video which says that if you have INR 10 lakh and want to buy a car, it is better to buy via loan than to pay the 10 lakh upfront. The proof was the screenshots of interest paid in the loan and interest received from FD. To put it in numbers, if you invest the 10lakh in a bank FD the interest amount you get at say 8% rate in say, 5 years is higher than the interest you need to pay on the loan say, at 9% rate. The ‘reason’ offered for this difference was - bank FD is compounded over 5 years vs the car loan which is on a reducing balance, so you will be better off taking a loan at a higher rate than the FD rate.\nI have got these numbers from Groww for easy representation\nThe statement above made by the influencer is clearly wrong and see if you could identify the fallacy.\nIf the statement is true, then there is an arbitrage opportunity to make free money, take a 10lakh loan at 9% and invest in bank FD at 8% and make money at the end ?\nThe interest rate in the (car) loan is for the time value of money plus the risk premium, sure the interest component of EMI reduces as you pay down your loan every month. But, is it correct to say you would be better off taking the loan at a higher rate (than what you would get in a FD) and investing the 10lakh in FD ? for a moment forget about tax on FD. The FD’s future value of INR 14.85 lakh after 5 years means that it is equal to today’s 10lakh at 8% annual discount rate 1. You can see that the FD amount is paid to the investor in full only after the term, not during the term. So, if we want to compare the loan, it is only fair that you compare the payments in the same terms."
-  },
-  {
-    "objectID": "posts/Loan_vs_FD/index.html#calculation",
-    "href": "posts/Loan_vs_FD/index.html#calculation",
-    "title": "Loan vs FD",
-    "section": "Calculation",
-    "text": "Calculation\nEMI for a 10 lakh loan at 9% annual interest rate for 5 years is 20.75k. Then there is a bank FD that pays 8% annual interest on the investment compounded monthly. Assume you can withdraw the EMI amount from the bank to meet the payment. If the bank FD is really beneficial at the end we will be left with money, but instead we will be short by 2EMIs.\n\n\n\n\n Click here to open the Google Sheet"
-  },
-  {
-    "objectID": "posts/Loan_vs_FD/index.html#conclusion",
-    "href": "posts/Loan_vs_FD/index.html#conclusion",
-    "title": "Loan vs FD",
-    "section": "Conclusion",
-    "text": "Conclusion\nI would think that the reason one should take a loan even though they have ready cash is related to optionality of cash and risk taking options. If you have 10 lakh cash in FD, you can sleep in peace knowing that you can get ready cash by breaking the FD in case of any emergency (reduced interest is only a small price to pay). Or you want to deploy the cash in an investment over a period of time.\nPS: I surely have spent more effort in refuting the bullshit inline with the Bullshit Asymmetry Principle"
-  },
-  {
-    "objectID": "posts/Loan_vs_FD/index.html#footnotes",
-    "href": "posts/Loan_vs_FD/index.html#footnotes",
-    "title": "Loan vs FD",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nThe compounding done by Groww is quarterly so the annual return is ~8.2%4↩︎"
   },
   {
     "objectID": "posts/useR_2025/index.html",
@@ -91,10 +35,66 @@
     "text": "Talk\nWatch the talk on YouTube"
   },
   {
+    "objectID": "posts/Loan_vs_FD/index.html",
+    "href": "posts/Loan_vs_FD/index.html",
+    "title": "Loan vs FD",
+    "section": "",
+    "text": "Recently, I came across a video which says that if you have INR 10 lakh and want to buy a car, it is better to buy via loan than to pay the 10 lakh upfront. The proof was the screenshots of interest paid in the loan and interest received from FD. To put it in numbers, if you invest the 10lakh in a bank FD the interest amount you get at say 8% rate in say, 5 years is higher than the interest you need to pay on the loan say, at 9% rate. The ‘reason’ offered for this difference was - bank FD is compounded over 5 years vs the car loan which is on a reducing balance, so you will be better off taking a loan at a higher rate than the FD rate.\nI have got these numbers from Groww for easy representation\nThe statement above made by the influencer is clearly wrong and see if you could identify the fallacy.\nIf the statement is true, then there is an arbitrage opportunity to make free money, take a 10lakh loan at 9% and invest in bank FD at 8% and make money at the end ?\nThe interest rate in the (car) loan is for the time value of money plus the risk premium, sure the interest component of EMI reduces as you pay down your loan every month. But, is it correct to say you would be better off taking the loan at a higher rate (than what you would get in a FD) and investing the 10lakh in FD ? for a moment forget about tax on FD. The FD’s future value of INR 14.85 lakh after 5 years means that it is equal to today’s 10lakh at 8% annual discount rate 1. You can see that the FD amount is paid to the investor in full only after the term, not during the term. So, if we want to compare the loan, it is only fair that you compare the payments in the same terms."
+  },
+  {
+    "objectID": "posts/Loan_vs_FD/index.html#calculation",
+    "href": "posts/Loan_vs_FD/index.html#calculation",
+    "title": "Loan vs FD",
+    "section": "Calculation",
+    "text": "Calculation\nEMI for a 10 lakh loan at 9% annual interest rate for 5 years is 20.75k. Then there is a bank FD that pays 8% annual interest on the investment compounded monthly. Assume you can withdraw the EMI amount from the bank to meet the payment. If the bank FD is really beneficial at the end we will be left with money, but instead we will be short by 2EMIs.\n Click here to open the Google Sheet"
+  },
+  {
+    "objectID": "posts/Loan_vs_FD/index.html#conclusion",
+    "href": "posts/Loan_vs_FD/index.html#conclusion",
+    "title": "Loan vs FD",
+    "section": "Conclusion",
+    "text": "Conclusion\nI would think that the reason one should take a loan even though they have ready cash is related to optionality of cash and risk taking options. If you have 10 lakh cash in FD, you can sleep in peace knowing that you can get ready cash by breaking the FD in case of any emergency (reduced interest is only a small price to pay). Or you want to deploy the cash in an investment over a period of time.\nPS: I surely have spent more effort in refuting the bullshit inline with the Bullshit Asymmetry Principle"
+  },
+  {
+    "objectID": "posts/Loan_vs_FD/index.html#footnotes",
+    "href": "posts/Loan_vs_FD/index.html#footnotes",
+    "title": "Loan vs FD",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThe compounding done by Groww is quarterly so the annual return is ~8.2%4↩︎"
+  },
+  {
+    "objectID": "posts/Binomial_Standard_Error/index.html",
+    "href": "posts/Binomial_Standard_Error/index.html",
+    "title": "Standard Error in Binomial Distribution",
+    "section": "",
+    "text": "A coin is tossed 1000 times and it landed heads 400 times. How confident we are whether the coin is fair ?\nWe can do a test of proportions, and our test statistic is (\\(\\bar{p}\\)-\\({P}\\))/\\(\\sqrt{PQ/n}\\)\nThe sample size (n) is 1000 and we have observed heads 400 times meaning \\(\\bar{p}\\) = 0.4 and \\(\\bar{q}\\) = 0.6.\nThe sample mean \\(\\bar{x}\\) is 400 (1000 x 0.4) (X is binomial)\nhere P = Q = 0.5 (population estimate)\nNow the denominator \\(\\sqrt{PQ/n}\\) is the standard error of the sample proportion \\(\\bar{p}\\)\nThis variance scaling is not really intuitive at the first look.\nThe variance is scaled by square of n, so the variance of sample proportion is \\({nPQ/n^2}\\) which is PQ/n and hence the standard error (same as standard deviation) is \\(\\sqrt{PQ/n}\\)\nWe could have solved the problem by testing number of heads instead of proportion of heads (400-500/15.81). 15.81 is just simply \\(\\sqrt{0.5*.0.5*1000}\\)\n\n\n\nGenerated using Gemini"
+  },
+  {
+    "objectID": "posts/About/index.html",
+    "href": "posts/About/index.html",
+    "title": "About this page",
+    "section": "",
+    "text": "This page is made using Quarto. Heavily borrowed from the guide made by Albert Rapp. Some other useful links to make your own quarto website on github pages are given below.\n\nAlbert Rapp\nQuarto on Github Pages\nBuilding with Quarto - Robert Mitchell\nQuarto Gallery\n\n\n\n\nGenerated using Dall-E"
+  },
+  {
+    "objectID": "posts/Monty_Hall/index.html",
+    "href": "posts/Monty_Hall/index.html",
+    "title": "Monty Hall Problem",
+    "section": "",
+    "text": "There are 3 doors (A,B,C) and only 1 door has a car behind it and the other two doors have goats behind them. Say, you have selected door A - now, the game show host opens B and shows it to be a goat. Now, you have an option to switch the door from A to C. should you switch ?\nThis seemingly simple problem statement has tortured novices and pros alike. To answer this question, we need to know how the odds change for winning if we switch vs if we don’t. When we don’t switch the probability of winning would remain at 1/3. When we switch there is 1/3 chance of selecting a car and losing and 2/3 chance of choosing a goat and winning (due to switch), so switching nearly doubles our chances.Thank you for the extra 33.3%. 1\nI have simulated this scenario below in R\nlibrary(dplyr)\nset.seed(1)\n\n  doors = c('A', 'B', 'C')\n  car_door = sample(doors, size = 10000, replace = T)\n  choosen_door = sample(doors, size = 10000, replace = T)\nset.seed(1)\n\ntibble(\n       car = car_door,\n       choosen = choosen_door) |&gt;\n  rowwise() |&gt;\n  mutate(door_revealed = sample(setdiff(doors, c(car, choosen)), 1)\n         ) |&gt;\n  mutate(switch = setdiff(doors, c(choosen, door_revealed))) |&gt;\n  ungroup()|&gt;\n  mutate(remain = choosen) %&gt;% \n  mutate(switch_win = ifelse(car == switch, 1, 0),\n         remain_win = ifelse(car == remain, 1, 0)\n         ) |&gt;\n  summarize(\n    switch_win_rate = sum(switch_win)/n(),\n    remain_win_rate = sum(remain_win)/n()\n  )\n\n# A tibble: 1 × 2\n  switch_win_rate remain_win_rate\n            &lt;dbl&gt;           &lt;dbl&gt;\n1           0.665           0.335"
+  },
+  {
+    "objectID": "posts/Monty_Hall/index.html#footnotes",
+    "href": "posts/Monty_Hall/index.html#footnotes",
+    "title": "Monty Hall Problem",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFor a more detailed discussion visit Brilliant.↩︎"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Viswadutt Poduri",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nBuilt a Shiny App with Posit AI\n\n\n\nTech\n\nShiny\n\nAI\n\nPosit\n\nRstats\n\n\n\n\n\n\n\n\n\nMay 2, 2026\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nLoan vs FD\n\n\n\nExcel\n\nLoan\n\nFD\n\nEMI\n\n\n\n\n\n\n\n\n\nSep 19, 2025\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\nCSV to Parquet\n\n\n\nRstats\n\ntalk\n\nuseR\n\n\n\n\n\n\n\n\n\nJul 5, 2025\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nStandard Error in Binomial Distribution\n\n\n\nRstats\n\nProbability\n\n\n\n\n\n\n\n\n\nJan 19, 2025\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nMonty Hall Problem\n\n\n\nRstats\n\nSimulation\n\n\n\n\n\n\n\n\n\nJan 8, 2025\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nAbout this page\n\n\n\nTech\n\n\n\n\n\n\n\n\n\nMar 10, 2023\n\n1 min\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nBuilt a Shiny App with Posit AI\n\n\n\nTech\n\nShiny\n\nAI\n\nPosit\n\nRstats\n\n\n\n\n\n\n\n\n\nMay 2, 2026\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nLoan vs FD\n\n\n\nExcel\n\nLoan\n\nFD\n\nEMI\n\n\n\n\n\n\n\n\n\nSep 19, 2025\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\nCSV to Parquet\n\n\n\nRstats\n\ntalk\n\nuseR\n\n\n\n\n\n\n\n\n\nJul 5, 2025\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nStandard Error in Binomial Distribution\n\n\n\nProbability\n\n\n\n\n\n\n\n\n\nJan 19, 2025\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nMonty Hall Problem\n\n\n\nRstats\n\nSimulation\n\n\n\n\n\n\n\n\n\nJan 8, 2025\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nAbout this page\n\n\n\nTech\n\n\n\n\n\n\n\n\n\nMar 10, 2023\n\n1 min\n\n\n\n\nNo matching items"
   }
 ]

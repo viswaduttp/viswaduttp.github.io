@@ -16,3 +16,26 @@
   border-radius: 100%;
   margin: 0 auto;
 }
+
+.responsive-embed,
+.spreadsheet-embed {
+  margin: 1rem 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.responsive-embed {
+  aspect-ratio: 16 / 9;
+}
+
+.spreadsheet-embed {
+  aspect-ratio: 4 / 3;
+}
+
+.responsive-embed iframe,
+.spreadsheet-embed iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
