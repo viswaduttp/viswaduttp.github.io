@@ -9,7 +9,7 @@ website:
   image: images/default.png
   
   page-footer: 
-    center: "This page is built with ❤️ and [Quarto](https://quarto.org/)"
+    center: "This page is built with ❤️ and [Quarto](https://quarto.org/) | Featured on [R-bloggers](http://www.R-bloggers.com)"
   
   open-graph: true
   twitter-card: true
@@ -21,6 +21,8 @@ website:
         href: About.qmd
       - text: Blog
         href: index.qmd 
+      - icon: rss
+        href: index.xml
       - icon: linkedin
         href: https://www.linkedin.com/in/viswadutt/
       - icon: github

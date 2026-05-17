@@ -1,7 +1,8 @@
 ---
 listing:
   contents: posts
-  feed: true
+  feed:
+    categories: [Rstats]
   sort: "date desc"
   type: default
   categories: true

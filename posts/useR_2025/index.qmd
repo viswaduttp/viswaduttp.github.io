@@ -13,6 +13,9 @@ Update: My useR! 2025 talk was highlighted by the organizing team as one of the 
 Sharing slides of my useR!2025 talk, *CSV to Parquet: Managing Data for Multi-language Analytics Teams*
 
 ## Slides
+
+[Open the slides](https://docs.google.com/presentation/d/e/2PACX-1vQpGIN2Ol9lk7GC3lIUku96-KWPFs8qzF9pd7Qf45a0y5m2SVjLKLWo8vgfxi99BvSm2_jx7wm8RqB2/pub?start=false&loop=false&delayms=3000)
+
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQpGIN2Ol9lk7GC3lIUku96-KWPFs8qzF9pd7Qf45a0y5m2SVjLKLWo8vgfxi99BvSm2_jx7wm8RqB2/pubembed?start=false&loop=false&delayms=3000"
           frameborder="0"
@@ -27,13 +30,7 @@ Sharing slides of my useR!2025 talk, *CSV to Parquet: Managing Data for Multi-la
 
 ## Talk
 
-<!-- <iframe width="560" height="315"  -->
-<!--         src="https://www.youtube.com/embed/TnFQOE3_H5A"  -->
-<!--         title="YouTube video player"  -->
-<!--         frameborder="0"  -->
-<!--         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  -->
-<!--         allowfullscreen> -->
-<!-- </iframe> -->
+[Watch the talk on YouTube](https://www.youtube.com/watch?v=TnFQOE3_H5A)
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
 
@@ -47,5 +44,4 @@ Sharing slides of my useR!2025 talk, *CSV to Parquet: Managing Data for Multi-la
   </iframe>
 
 </div>
-
 
