@@ -13,6 +13,9 @@ website:
   
   open-graph: true
   twitter-card: true
+  google-analytics: "G-21HB08TTLF"
+  cookie-consent:
+    type: express
   
   navbar:
     title: Viswadutt's Blog
